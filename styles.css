@@ -1,0 +1,641 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  min-width: 1000px;
+  box-sizing: border-box;
+  font-family: Arial;
+  font-size: 16px;
+}
+
+.layout__fix-container {
+  position: relative;
+  width: 1000px;
+	margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* -------- Header --------- */
+
+/* ---header-top--- */
+
+.header-top {
+  padding: 19px 0 18px 0;
+  background-color: #00122f;
+  color: #ffffff;
+}
+
+.header-top__heading {
+  float: left;
+}
+
+.header-top__heading-h1 {
+  margin: 0;
+  font-size: 16px;
+}
+.header-top__heading-link {
+  color: #ffffff;
+}
+
+.header-top__heading-link:hover {
+  color: #0072bc;
+}
+
+.header-top__datetime {
+  float: right;
+}
+
+/* ---header-middle--- */
+
+.header-middle {
+  padding-top: 40px;
+}
+
+.logo {
+  display: block;
+  float: left;
+}
+
+.cityes {
+  float: left;
+  width: 90px;
+  margin-left: 53px;
+}
+
+.cityes__link {
+  color: #0072bc;
+  text-decoration: underline;
+}
+
+/* .cityes {
+  float: left;
+  width: 90px;
+  margin-left: 53px;
+  background-image: url("img/down-arrow.png");
+  background-position: 100% 8px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+} */
+
+/* .header__sity-choise {
+  border: none;
+  background: transparent;
+  width: 105px;
+  font-size: 16px;
+  color: #448ccb;
+  outline: none;
+  border-bottom: 2px dotted #448ccb;
+} */
+
+/* .header__sity-choise:hover {
+  border-bottom: none;
+  cursor: pointer;
+} */
+
+/* .header__sity-choise option {
+  border: none;
+  outline: none;
+} */
+
+.header-middle__date-container {
+  float: left;
+  margin-left: 34px;
+}
+
+.header-middle__time-container {
+  float: left;
+  margin-left: 29px;
+  padding-left: 20px;
+  background-image: url("img/clock.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+.header-middle__time {
+  color: #91919f;
+}
+
+.header-middle__weather-container {
+  float: left;
+  margin-left: 34px;
+  padding-left: 32px;
+  background-image: url("img/cloudy.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+.header-middle__weather {
+  color: #91919f;
+}
+
+.search-form {
+  position: relative;
+  float: right;
+}
+
+.search-form__text {
+  height: 46px;
+  width: 260px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 20px;
+  padding-right: 40px;
+  border-width: 0;
+  border-radius: 22.5px;
+  background-color: #f3f3f3;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-form__button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  border-width: 0;
+  background: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* ---header-bottom--- */
+
+.header-bottom {
+  padding-top: 35px;
+  padding-bottom: 30px;
+  font-size:0;
+}
+
+.main-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 16px;
+}
+
+.main-menu__item {
+  display: inline-block;
+}
+
+.main-menu__item::after {
+  content: "/";
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.main-menu__item:last-child::after {
+  content: "";
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.main-menu__item-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-menu__item-link:hover {
+  color: #0072bc;
+  border-bottom: 2px dotted #0072bc;
+}
+
+
+/* -------- Main --------- */
+
+.news {
+  background-image: url("img/central-bg-top.png");
+  background-position: top;
+  background-repeat: repeat-x;
+  background-color: #f9f9f9;
+  padding-top: 20px;
+}
+
+.news .layout__left-column {
+  float: left;
+  width: 25%;
+  margin-right: 2%;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #FFFFFF;
+  box-sizing: border-box; /* Почему-то не унаследовалось от body ??? */
+}
+
+.news .layout__central-column {
+  float: left;
+  width: 46%;
+  background: transparent;
+}
+
+.news .layout__right-column {
+  float: right;
+  width: 25%;
+  margin-left: 2%;
+}
+
+/* ---News-list--- */
+
+.news-list-heading {
+  margin: 0;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.news-list-heading__link {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+}
+
+.news-list-heading__link:hover {
+  color: #0072bc;
+}
+
+/* ---News-item--- */
+
+.news-item {
+  padding-top: 8px;
+  margin-bottom: 11px;
+}
+
+.news-item__heading {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+}
+
+.news-item__heading-link {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.news-item__heading-link:hover {
+  color: #0072bc;
+}
+
+.news-item__props {
+  position: relative;
+}
+
+.news-item__label {
+  font-size: 12px;
+  color: #91919f;
+  text-decoration: none;
+}
+
+.news-item__label:hover {
+  color: #0072bc;
+}
+
+.news-item__label::before {
+  content: "/";
+}
+
+.news-item__time-container {
+  position: absolute;
+  bottom:1px;
+  left: 100px;
+  padding-left: 18px;
+  font-size: 12px;
+  background-image: url('img/icon-time.png');
+  background-repeat: no-repeat;
+  background-position: 0 1px;
+}
+
+.news-item__comments-count-container {
+  position: absolute;
+  bottom:1px;
+  left: 165px;
+  padding-left: 18px;
+  font-size: 12px;
+  background-image: url('img/icon-comments.png');
+  background-repeat: no-repeat;
+  background-position: 0 1px;
+}
+
+.news-item__image-container {
+  height: 140px;
+  overflow: hidden;
+}
+
+.news-item__image {
+  width: 100%;
+}
+
+
+/* ---Button--- */
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px auto 25px auto;
+  height: 46px;
+  width: 177px;
+  border: 1px solid #0072bc;
+  border-radius: 25% / 100%;
+}
+.button:hover {
+  background-color: #448ccb;
+}
+
+.button:hover .button__link {
+  color:#ffffff;
+}
+
+.button__link {
+  display: block;
+  padding: 15px 46px;
+  font-size: 14px;
+  color: #0072bc;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+/* ---news-with-picture--- */
+
+.news-with-picture {
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.news-with-picture__label {
+  position: absolute;
+  top: 112px;
+  left: 20px;
+  font-size: 12px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.news-with-picture__label:hover {
+  color: #0072bc;
+}
+
+.news-with-picture__label::before {
+  content: "/";
+}
+
+.news-with-picture__heading {
+  position: absolute;
+  top: 135px;
+  left: 20px;
+  margin: 0;
+  line-height: 35px;
+  letter-spacing: -0.6px;
+}
+
+.news-with-picture__heading-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.news-with-picture__heading-link:hover {
+  color: #0072bc;
+}
+
+.news-with-picture__props {
+  position: absolute;
+  top: 270px;
+  left: 20px;
+}
+
+.news-with-picture__date-link {
+  float: left;
+  margin-left: 20px;
+  font-size: 12px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.news-with-picture__date-link:hover {
+  color: #0072bc;
+}
+
+.news-with-picture__time-container {
+  float: left;
+  bottom:2px;
+  left: 115px;
+  margin-left: 34px;
+  padding-left: 13px;
+  font-size: 12px;
+  background-image: url('img/main-news-clock.png');
+  background-repeat: no-repeat;
+  background-position: left 1.5px;
+  color: #ffffff;
+}
+
+.news-with-picture__description-container {
+  position: absolute;
+  top: 285px;
+  left: 20px;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0.7;
+}
+
+
+/* --- news-items --- */
+
+.news-items {
+  margin-top: 20px;
+}
+
+.news-items > .news-item {
+  float: left;
+  width: 220px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.news-items .news-item:nth-child(2n+1) {
+  margin-right: 20px;
+}
+
+
+/* --- popular-news--- */
+
+.popular-news {
+  padding-top: 20px;
+  padding-bottom: 59px;
+  background-color: #f9f9f9;
+}
+
+.popular-news .layout__left-column {
+  float: left;
+  width: 58%;  
+}
+
+
+.popular-news .layout__right-column {
+  float: right;
+  width: 42%;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box; /* Почему-то не унаследовалось от body ??? */
+}
+
+.popular-news .news-item__heading,
+.popular-news .news-item__heading-link {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+
+/* --- banner ---*/
+
+.banner {
+  margin-top: 20px;
+}
+
+.banner:first-child {
+  margin-top: 0;
+}
+
+
+/* -------- Footer --------- */
+
+.footer {
+  background-color: #00122f;
+}
+
+.footer-top {
+  padding-top: 57px;
+  padding-bottom: 57px;
+}
+
+.footer-menu {
+  float: left;
+}
+
+.footer-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 16px;
+}
+
+.footer-menu__item {
+  padding-bottom: 19px;
+}
+
+.footer-menu__item:last-child {
+  padding-bottom: 0;
+}
+
+.footer-menu__item-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-menu__item-link:hover {
+  color: #0072bc;
+}
+
+.footer-menu>.logo {
+  float: none;
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+.footer-menu:nth-child(1) {
+  margin-right: 60px;
+}
+
+.footer-menu:nth-child(2) {
+  margin-right: 200px;
+}
+
+.footer-right {
+  float: right;
+}
+
+.social-button-block {
+  margin-bottom: 45px;
+}
+
+.social-button {
+  display: block;
+  float: left;
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.social-button:last-child {
+  margin-right: 0;
+}
+
+.social-button:hover {
+  border-color: #0072bc;
+}
+
+
+.vk {
+  background-image: url("img/vk_icon.png");
+}
+
+.fb {
+  background-image: url("img/fb_icon.png");
+}
+.twitter {
+  background-image: url("img/twitter_icon.png");
+}
+.instagram {
+  background-image: url("img/instagram_icon.png");
+}
+
+.footer__phone {
+  background-image: url("img/call-answer_icon.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  padding-left: 30px;
+  margin-bottom: 26px;
+}
+
+.footer__email {
+  background-image: url("img/mail_icon.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  padding-left: 30px;
+}
+
+.footer__phone-link, .footer__email-link {
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.footer__phone-link:hover, .footer__email-link:hover {
+  color: #0072bc;
+}
+
+
+/* --- Copyright --- */
+
+.footer__copyright {
+  padding-top: 19px;
+  padding-bottom: 19px;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.4;
+  text-align: center;
+}
