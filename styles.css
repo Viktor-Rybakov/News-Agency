@@ -2,9 +2,12 @@ html, body {
   margin: 0;
   padding: 0;
   min-width: 1000px;
-  box-sizing: border-box;
   font-family: Arial;
   font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .layout__fix-container {
@@ -31,12 +34,10 @@ html, body {
 
 .header-top__heading {
   float: left;
-}
-
-.header-top__heading-h1 {
   margin: 0;
   font-size: 16px;
 }
+
 .header-top__heading-link {
   color: #ffffff;
 }
@@ -55,7 +56,7 @@ html, body {
   padding-top: 40px;
 }
 
-.logo {
+.header-logo_image {
   display: block;
   float: left;
 }
@@ -66,37 +67,6 @@ html, body {
   text-decoration: underline;
   margin-left: 53px;
 }
-
-
-/* .cityes {
-  float: left;
-  width: 90px;
-  margin-left: 53px;
-  background-image: url("img/down-arrow.png");
-  background-position: 100% 8px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-} */
-
-/* .header__sity-choise {
-  border: none;
-  background: transparent;
-  width: 105px;
-  font-size: 16px;
-  color: #448ccb;
-  outline: none;
-  border-bottom: 2px dotted #448ccb;
-} */
-
-/* .header__sity-choise:hover {
-  border-bottom: none;
-  cursor: pointer;
-} */
-
-/* .header__sity-choise option {
-  border: none;
-  outline: none;
-} */
 
 .header-middle__date {
   float: left;
@@ -200,7 +170,7 @@ html, body {
 
 /* -------- Main --------- */
 
-.news {
+.main {
   background-image: url("img/central-bg-top.png");
   background-position: top;
   background-repeat: repeat-x;
@@ -214,8 +184,7 @@ html, body {
   margin-right: 2%;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #FFFFFF;
-  box-sizing: border-box; /* Почему-то не унаследовалось от body ??? */
+  background-color: #ffffff;
 }
 
 .news .layout__central-column {
@@ -251,14 +220,21 @@ html, body {
   color: #0072bc;
 }
 
+.news-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
 /* ---News-item--- */
 
 .news-item {
-  padding-top: 8px;
   margin-bottom: 11px;
 }
 
 .news-item__heading {
+  padding-top: 8px;
   margin-top: 0;
   margin-bottom: 10px;
   line-height: 20px;
@@ -294,7 +270,7 @@ html, body {
   content: "/";
 }
 
-.news-item__time-container {
+.news-item__time {
   position: absolute;
   bottom:1px;
   left: 100px;
@@ -305,7 +281,7 @@ html, body {
   background-position: 0 1px;
 }
 
-.news-item__comments-count-container {
+.news-item__comments-count {
   position: absolute;
   bottom:1px;
   left: 165px;
@@ -339,7 +315,7 @@ html, body {
   border-radius: 25% / 100%;
 }
 .button:hover {
-  background-color: #448ccb;
+  background-color: #0072bc;
 }
 
 .button:hover .button__link {
@@ -361,6 +337,10 @@ html, body {
 .news-with-picture {
   position: relative;
   background-repeat: no-repeat;
+}
+
+.news-with-picture__image {
+  width: 100%;
 }
 
 .news-with-picture__label {
@@ -435,7 +415,7 @@ html, body {
   position: absolute;
   top: 285px;
   left: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 14px;
   line-height: 20px;
   opacity: 0.7;
@@ -445,17 +425,17 @@ html, body {
 /* --- news-items --- */
 
 .news-items {
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
-.news-items > .news-item {
+.news-items .news-list__item {
   float: left;
   width: 220px;
   padding: 0;
   margin-bottom: 20px;
 }
 
-.news-items .news-item:nth-child(2n+1) {
+.news-items .news-list__item:nth-child(2n+1) {
   margin-right: 20px;
 }
 
@@ -479,7 +459,6 @@ html, body {
   width: 42%;
   padding-left: 20px;
   padding-right: 20px;
-  box-sizing: border-box; /* Почему-то не унаследовалось от body ??? */
 }
 
 .popular-news .news-item__heading,
@@ -539,8 +518,8 @@ html, body {
   color: #0072bc;
 }
 
-.footer-menu>.logo {
-  float: none;
+.footer-logo {
+  display: block;
   margin-top: 0;
   margin-bottom: 22px;
 }
@@ -597,27 +576,30 @@ html, body {
 }
 
 .footer__phone {
+  display: block;
   background-image: url("img/call-answer_icon.png");
   background-repeat: no-repeat;
   background-position-y: center;
   padding-left: 30px;
   margin-bottom: 26px;
-}
-
-.footer__email {
-  background-image: url("img/mail_icon.png");
-  background-repeat: no-repeat;
-  background-position-y: center;
-  padding-left: 30px;
-}
-
-.footer__phone-link, .footer__email-link {
   color: #ffffff;
   font-size: 18px;
   text-decoration: none;
 }
 
-.footer__phone-link:hover, .footer__email-link:hover {
+.footer__email {
+  display: block;
+  background-image: url("img/mail_icon.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  padding-left: 30px;
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.footer__phone:hover,
+.footer__email:hover {
   color: #0072bc;
 }
 
