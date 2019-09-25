@@ -62,14 +62,11 @@ html, body {
 
 .cityes {
   float: left;
-  width: 90px;
+  color: #0072bc;
+  text-decoration: underline;
   margin-left: 53px;
 }
 
-.cityes__link {
-  color: #0072bc;
-  text-decoration: underline;
-}
 
 /* .cityes {
   float: left;
@@ -101,34 +98,28 @@ html, body {
   outline: none;
 } */
 
-.header-middle__date-container {
+.header-middle__date {
   float: left;
   margin-left: 34px;
 }
 
-.header-middle__time-container {
+.header-middle__time {
   float: left;
   margin-left: 29px;
   padding-left: 20px;
   background-image: url("img/clock.png");
   background-repeat: no-repeat;
   background-position-y: center;
-}
-
-.header-middle__time {
   color: #91919f;
 }
 
-.header-middle__weather-container {
+.header-middle__weather {
   float: left;
   margin-left: 34px;
   padding-left: 32px;
   background-image: url("img/cloudy.png");
   background-repeat: no-repeat;
   background-position-y: center;
-}
-
-.header-middle__weather {
   color: #91919f;
 }
 
@@ -155,11 +146,14 @@ html, body {
   position: absolute;
   top: 15px;
   right: 20px;
+  width: 16px;
+  height: 16px;
   border-width: 0;
   background: none;
   outline: none;
   padding: 0;
   cursor: pointer;
+  background-image: url("img/search.png");
 }
 
 /* ---header-bottom--- */
