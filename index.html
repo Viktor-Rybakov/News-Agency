@@ -25,13 +25,10 @@
 
         <a class="cityes" href="#">Москва</a>
 
-        <span class="header-middle__date">
-          <time datetime="2019-06-19">19 июня, вторник</time>
-        </span>
-
-        <span class="header-middle__time">
-          <time datetime="10:48">10:48</time>
-        </span>
+        <time class="header-middle__datetime" datetime="2019-06-19T10:48:00">
+          <span class="header-middle__date">19 июня, вторник</span>
+          <span class="header-middle__time">10:48</span>
+        </time>
 
         <span class="header-middle__weather">+22&#8451;</span>
 
@@ -210,16 +207,14 @@
                 полуострова</a>
             </h3>
 
-            <div class="news-with-picture__props clearfix">
-              <a class="news-with-picture__date-link" href="#">
-                <time class="news-with-picture__date" datetime="2018-06-19">19 июня 2018</time>
-              </a>
+            <time class="news-with-picture__datetime" datetime="2018-06-19T10:48:00">
+              <a class="news-with-picture__date" href="#">19 июня 2018</a>
 
-              <time class="news-with-picture__time" datetime="10:48">10:48</time>
-            </div>
+              <span class="news-with-picture__time">10:48</span>
+            </time>
           </article>
 
-          <div class="news-items">
+          <div class="news-items-with-small-pictures">
 
             <ul class="news-list">
               <li class="news-list__item">
@@ -319,13 +314,11 @@
                 войны</a>
             </h3>
 
-            <div class="news-with-picture__props clearfix">
-              <a class="news-with-picture__date-link" href="#">
-                <time class="news-with-picture__date" datetime="2018-06-19">19 июня 2018</time>
-              </a>
+            <time class="news-with-picture__datetime" datetime="2018-06-19T10:48:00">
+              <a class="news-with-picture__date" href="#">19 июня 2018</a>
 
-              <time class="news-with-picture__time" datetime="10:48">10:48</time>
-            </div>
+              <span class="news-with-picture__time">10:48</span>
+            </time>
 
             <p class="news-with-picture__description">Министерство коммерции Китая заявило, что Пекин примет
               «качественные» и «количественные» меры, если
@@ -396,7 +389,6 @@
   </main>
 
   <footer class="footer">
-
     <div class="footer-top">
       <div class="layout__fix-container clearfix">
         <nav class="footer-menu">
