@@ -292,13 +292,9 @@ html, body {
   background-position: 0 1px;
 }
 
-.news-item__image-container {
-  height: 140px;
-  overflow: hidden;
-}
-
 .news-item__image {
   width: 100%;
+  max-height: 140px;
 }
 
 
@@ -398,7 +394,7 @@ html, body {
   color: #0072bc;
 }
 
-.news-with-picture__time-container {
+.news-with-picture__time {
   float: left;
   bottom:2px;
   left: 115px;
@@ -411,7 +407,7 @@ html, body {
   color: #ffffff;
 }
 
-.news-with-picture__description-container {
+.news-with-picture__description {
   position: absolute;
   top: 285px;
   left: 20px;
@@ -471,13 +467,18 @@ html, body {
 /* --- banner ---*/
 
 .banner {
-  margin-top: 20px;
+  display: block;
+  margin-bottom: 20px;
+  width: 250px;
 }
 
-.banner:first-child {
-  margin-top: 0;
+.banner:last-child {
+  margin-bottom: 0;
 }
 
+.banner__image {
+  width: 100%;
+}
 
 /* -------- Footer --------- */
 
