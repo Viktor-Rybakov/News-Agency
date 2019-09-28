@@ -10,6 +10,17 @@ html, body {
   box-sizing: border-box;
 }
 
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
 .layout__fix-container {
   position: relative;
   width: 1000px;
@@ -180,9 +191,14 @@ html, body {
   background-repeat: repeat-x;
   background-color: #f9f9f9;
   padding-top: 20px;
+  padding-bottom: 59px;
 }
 
-.news .layout__left-column {
+.main-top {
+  margin-bottom: 20px;
+}
+
+.news-today {
   float: left;
   width: 25%;
   margin-right: 2%;
@@ -191,13 +207,13 @@ html, body {
   background-color: #ffffff;
 }
 
-.news .layout__central-column {
+.news-main {
   float: left;
   width: 46%;
   background: transparent;
 }
 
-.news .layout__right-column {
+.banners {
   float: right;
   width: 25%;
   margin-left: 2%;
@@ -441,31 +457,29 @@ html, body {
 }
 
 
-/* --- popular-news--- */
+/* --- news-most-reading--- */
 
-.popular-news {
-  padding-top: 20px;
-  padding-bottom: 59px;
-  background-color: #f9f9f9;
+.news-most-reading {
+  background-color: #ffffff;
 }
 
-.popular-news .layout__left-column {
+.news-most-reading .news-with-picture {
   float: left;
   width: 58%;  
 }
 
-.popular-news .layout__right-column {
+.news-most-reading .news-list {
   float: right;
   width: 42%;
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.popular-news .news-item__heading {
+.news-most-reading .news-item__heading {
   line-height: 22px;
 }
 
-.popular-news .news-item__heading-link {
+.news-most-reading .news-item__heading-link {
   font-size: 16px;
 }
 
@@ -513,6 +527,7 @@ html, body {
   padding: 0;
   list-style-type: none;
   font-size: 16px;
+  column-count: 3;
 }
 
 .footer-menu__item {
@@ -542,14 +557,21 @@ html, body {
   float: right;
 }
 
-.social-button-block {
+.social-button-list {
+  padding: 0;
+  list-style-type: none;
   margin-bottom: 45px;
+  margin-top: 0;
 }
 
-.social-button {
+.social-button-list__item {
   display: block;
   float: left;
   margin-right: 20px;
+}
+
+.social-button {
+  display: block;  
   width: 40px;
   height: 40px;
   border: 1px solid #ffffff;
@@ -579,6 +601,12 @@ html, body {
 }
 .instagram {
   background-image: url("img/instagram_icon.png");
+}
+
+.contacts-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .footer__phone {
@@ -620,4 +648,8 @@ html, body {
   color: #ffffff;
   opacity: 0.4;
   text-align: center;
+}
+
+.footer__copyright-text {
+  margin: 0;
 }
