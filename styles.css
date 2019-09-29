@@ -508,49 +508,53 @@ html, body {
 .footer-top {
   padding-top: 57px;
   padding-bottom: 57px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .footer-menu {
   float: left;
 }
 
-.footer-menu:nth-child(1) {
-  margin-right: 60px;
-}
-
-.footer-menu:nth-child(2) {
-  margin-right: 200px;
-}
-
 .footer-menu__list {
-  margin: 0;
+  margin: 0 200px 0 0;
   padding: 0;
   list-style-type: none;
   font-size: 16px;
-  column-count: 3;
+  column-count: 2;
+  column-gap: 60px;
 }
 
-.footer-menu__item {
-  padding-bottom: 19px;
+.footer-menu__item,
+.footer-about-list__item {
+  line-height: 36px;
 }
 
-.footer-menu__item:last-child {
-  padding-bottom: 0;
-}
-
-.footer-menu__item-link {
+.footer-menu__item-link,
+.footer-about-list__item-link {
   color: #ffffff;
   text-decoration: none;
 }
 
-.footer-menu__item-link:hover {
+.footer-menu__item-link:hover,
+.footer-about-list__item-link:hover {
   color: #0072bc;
+}
+
+.footer-center {
+  float: left;
 }
 
 .footer-logo {
   display: block;
   margin-top: 0;
   margin-bottom: 22px;
+}
+
+.footer-about-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 16px;
 }
 
 .footer-right {
@@ -596,9 +600,11 @@ html, body {
 .fb {
   background-image: url("img/fb_icon.png");
 }
+
 .twitter {
   background-image: url("img/twitter_icon.png");
 }
+
 .instagram {
   background-image: url("img/instagram_icon.png");
 }
@@ -641,15 +647,11 @@ html, body {
 /* --- Copyright --- */
 
 .footer__copyright {
+  margin: 0;
   padding-top: 19px;
   padding-bottom: 19px;
-  border-top: 1px solid rgba(255, 255, 255, 0.4);
   font-size: 14px;
   color: #ffffff;
   opacity: 0.4;
   text-align: center;
-}
-
-.footer__copyright-text {
-  margin: 0;
 }
