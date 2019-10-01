@@ -1,0 +1,172 @@
+/* -------- Header --------- */
+
+/* ---header-rows--- */
+
+.header-top {
+  padding: 19px 0 18px 0;
+
+  color: #ffffff;
+
+  background-color: #00122f;
+}
+
+.header-middle {
+  padding-top: 40px;
+}
+
+.header-bottom {
+  padding-top: 35px;
+  padding-bottom: 30px;
+
+  font-size:0;
+}
+
+
+/* --- header-top-row-elements --- */
+
+.header-top__heading {
+  float: left;
+  margin: 0;
+
+  font-size: 16px;
+}
+
+.header-top__heading-link {
+  color: #ffffff;
+}
+
+.header-top__heading-link:hover {
+  color: #0072bc;
+}
+
+.header-top__datetime {
+  float: right;
+}
+
+
+/* --- header-middle-row-elements --- */ 
+
+.header-logo_image {
+  display: block;
+  float: left;
+}
+
+.cityes {
+  float: left;
+  margin-left: 53px;
+
+  color: #0072bc;
+  text-decoration: underline;
+}
+
+.header-middle__datetime {
+  float: left;
+  margin-left: 34px;
+}
+
+.header-middle__date {
+  float: left;  
+  margin-right: 29px;
+}
+
+.header-middle__time {
+  float: left;
+  padding-left: 20px;
+
+  color: #91919f;
+
+  background-image: url("../img/clock.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+.header-middle__weather {
+  float: left;
+  margin-left: 34px;
+  padding-left: 32px;
+
+  color: #91919f;
+
+  background-image: url("../img/cloudy.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+
+/* --- Search form --- */
+
+.search-form {
+  position: relative;
+
+  float: right;
+}
+
+.search-form__text {
+  width: 260px;
+  height: 46px;
+  padding: 0 40px 0 20px;
+  
+  font-size: 14px;
+
+  background-color: #f3f3f3;
+  border-width: 0;
+  border-radius: 22.5px;
+  
+  outline: none;
+}
+
+.search-form__button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+
+  width: 16px;
+  height: 16px;
+  padding: 0;
+
+  background: none;
+  background-image: url("../img/search.png");
+  border-width: 0;
+  
+  outline: none;
+  cursor: pointer;
+}
+
+
+/* --- header-menu --- */
+
+.header-menu__list {
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;
+
+  list-style-type: none;
+}
+
+.header-menu__item {
+  display: inline-block;
+}
+
+.header-menu__item::after {
+  content: "/";
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.header-menu__item:last-child::after {
+  content: "";
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.header-menu__item-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.header-menu__item-link:hover {
+  color: #0072bc;
+  
+  border-bottom: 2px dotted #0072bc;
+}

@@ -1,0 +1,183 @@
+/* -------- Footer --------- */
+
+.footer {
+  background-color: #00122f;
+}
+
+.footer-top {
+  padding-top: 57px;
+  padding-bottom: 57px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.footer-center {
+  float: left;
+}
+
+.footer-right {
+  float: right;
+}
+
+
+/* --- footer-menu --- */
+/* --- footer-about --- */
+
+.footer-menu {
+  float: left;
+}
+
+.footer-menu__list {
+  margin: 0 200px 0 0;
+  padding: 0;
+
+  font-size: 16px;
+
+  list-style-type: none;
+  column-count: 2;
+  column-gap: 60px;
+}
+
+.footer-about-list {
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;
+
+  list-style-type: none;
+}
+
+.footer-menu__item,
+.footer-about-list__item {
+  line-height: 36px;
+}
+
+.footer-menu__item-link,
+.footer-about-list__item-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-menu__item-link:hover,
+.footer-about-list__item-link:hover {
+  color: #0072bc;
+}
+
+
+/* --- footer-logo --- */
+
+.footer-logo {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+
+/* --- social-buttons --- */
+
+.social-button-list {
+  margin-top: 0;
+  margin-bottom: 45px;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.social-button-list__item {
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+
+.social-button-list__item:last-child {
+  margin-right: 0;
+}
+
+.social-button {
+  display: block;  
+  width: 40px;
+  height: 40px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+
+.social-button:hover {
+  background-color: #0072bc;
+  border-color: #0072bc;
+}
+
+.vk {
+  background-image: url("../img/vk_icon.png");
+}
+
+.fb {
+  background-image: url("../img/fb_icon.png");
+}
+
+.twitter {
+  background-image: url("../img/twitter_icon.png");
+}
+
+.instagram {
+  background-image: url("../img/instagram_icon.png");
+}
+
+
+/* --- contacts-list --- */
+
+.contacts-list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.footer__phone {
+  display: block;
+  margin-bottom: 26px;
+  padding-left: 30px;
+
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+
+  background-image: url("../img/call-answer_icon.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+.footer__email {
+  display: block;
+  padding-left: 30px;
+
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+
+  background-image: url("../img/mail_icon.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+.footer__phone:hover,
+.footer__email:hover {
+  color: #0072bc;
+}
+
+
+/* --- Copyright --- */
+
+.footer__copyright {
+  margin: 0;
+  padding-top: 19px;
+  padding-bottom: 19px;
+
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+
+  opacity: 0.4;
+}
