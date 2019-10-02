@@ -1,6 +1,8 @@
 /* -------- Footer --------- */
 
 .footer {
+  color: #ffffff;
+
   background-color: #00122f;
 }
 
@@ -46,12 +48,6 @@
 .footer-menu__item,
 .footer-about__item {
   line-height: 33px;
-}
-
-.footer-menu__item-link,
-.footer-about__item-link {
-  color: #ffffff;
-  text-decoration: none;
 }
 
 .footer-menu__item-link:hover,
@@ -137,8 +133,6 @@
   padding-left: 30px;
 
   font-size: 18px;
-  color: #ffffff;
-  text-decoration: none;
 
   background-image: url("../img/call-answer_icon.png");
   background-repeat: no-repeat;
@@ -150,8 +144,6 @@
   padding-left: 30px;
 
   font-size: 18px;
-  color: #ffffff;
-  text-decoration: none;
 
   background-image: url("../img/mail_icon.png");
   background-repeat: no-repeat;
@@ -172,7 +164,6 @@
   padding-bottom: 19px;
 
   font-size: 14px;
-  color: #ffffff;
   text-align: center;
 
   opacity: 0.4;

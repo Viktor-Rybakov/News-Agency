@@ -52,7 +52,7 @@
   padding-right: 20px;
 }
 
-.news-most-reading .news-list-heading {
+.news-most-reading .news-list__heading {
   float: right;
   width: 41%;
 }
@@ -88,7 +88,7 @@
   margin-right: 20px;
 }
 
-.news-list-heading {
+.news-list__heading {
   margin: 0 0 28px 0;
   padding: 24px 20px 22px 18px;
   
@@ -99,7 +99,7 @@
   border-bottom: 1px solid #e5e5e5;
 }
 
-.news-list-heading:hover {
+.news-list__heading:hover {
   color: #0072bc;
 }
 

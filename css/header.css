@@ -37,7 +37,7 @@
   text-decoration: underline;
 }
 
-.header-top__heading:hover {
+.header-top__heading-link:hover {
   color: #0072bc;
 }
 
