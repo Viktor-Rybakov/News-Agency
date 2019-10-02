@@ -12,10 +12,10 @@
 
 .header-middle {
   padding-top: 40px;
+  margin-bottom: 35px;
 }
 
 .header-bottom {
-  padding-top: 35px;
   padding-bottom: 30px;
 
   font-size:0;
@@ -29,18 +29,22 @@
   margin: 0;
 
   font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.32px;
 }
 
 .header-top__heading-link {
-  color: #ffffff;
+  text-decoration: underline;
 }
 
-.header-top__heading-link:hover {
+.header-top__heading:hover {
   color: #0072bc;
 }
 
 .header-top__datetime {
   float: right;
+
+  letter-spacing: -0.32px;
 }
 
 
@@ -49,29 +53,35 @@
 .header-logo_image {
   display: block;
   float: left;
+  margin-right: 60px;
 }
 
 .cityes {
   float: left;
-  margin-left: 53px;
+  margin-top: 13px;
+  margin-right: 65px;
 
   color: #0072bc;
-  text-decoration: underline;
+
+  border-bottom: 2px dotted #0072bc;
 }
 
 .header-middle__datetime {
   float: left;
-  margin-left: 34px;
+  margin-top: 12px;
+  margin-right: 29px;
 }
 
 .header-middle__date {
   float: left;  
-  margin-right: 29px;
+  margin-right: 34px;
+
+  letter-spacing: -0.32px;
 }
 
 .header-middle__time {
   float: left;
-  padding-left: 20px;
+  padding-left: 24px;
 
   color: #91919f;
 
@@ -82,8 +92,8 @@
 
 .header-middle__weather {
   float: left;
-  margin-left: 34px;
-  padding-left: 32px;
+  margin-top: 12px;
+  padding-left: 39px;
 
   color: #91919f;
 
@@ -102,11 +112,12 @@
 }
 
 .search-form__text {
-  width: 260px;
+  width: 319px;
   height: 46px;
   padding: 0 40px 0 20px;
   
   font-size: 14px;
+  letter-spacing: -0.28px;
 
   background-color: #f3f3f3;
   border-width: 0;
@@ -150,8 +161,8 @@
 
 .header-menu__item::after {
   content: "/";
-  margin-left: 18px;
-  margin-right: 18px;
+  margin-left: 19px;
+  margin-right: 12px;
 }
 
 .header-menu__item:last-child::after {
@@ -161,8 +172,7 @@
 }
 
 .header-menu__item-link {
-  color: #000000;
-  text-decoration: none;
+  letter-spacing: -0.32px;
 }
 
 .header-menu__item-link:hover {

@@ -5,18 +5,20 @@
 }
 
 .footer-top {
-  padding-top: 57px;
-  padding-bottom: 57px;
+  padding-top: 46px;
+  padding-bottom: 48px;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .footer-center {
   float: left;
+  padding-top: 13px;
 }
 
 .footer-right {
   float: right;
+  padding-top: 11px;
 }
 
 
@@ -25,41 +27,35 @@
 
 .footer-menu {
   float: left;
+  margin-right: 239px;
 }
 
-.footer-menu__list {
-  margin: 0 200px 0 0;
-  padding: 0;
-
-  font-size: 16px;
-
-  list-style-type: none;
-  column-count: 2;
-  column-gap: 60px;
-}
-
-.footer-about-list {
+.footer-menu__list,
+.footer-about__list {
   margin: 0;
   padding: 0;
 
-  font-size: 16px;
-
   list-style-type: none;
 }
 
+.footer-menu__list {
+  column-count: 2;
+  column-gap: 39%;
+}
+
 .footer-menu__item,
-.footer-about-list__item {
-  line-height: 36px;
+.footer-about__item {
+  line-height: 33px;
 }
 
 .footer-menu__item-link,
-.footer-about-list__item-link {
+.footer-about__item-link {
   color: #ffffff;
   text-decoration: none;
 }
 
 .footer-menu__item-link:hover,
-.footer-about-list__item-link:hover {
+.footer-about__item-link:hover {
   color: #0072bc;
 }
 
@@ -69,27 +65,27 @@
 .footer-logo {
   display: block;
   margin-top: 0;
-  margin-bottom: 22px;
+  margin-bottom: 8px;
 }
 
 
 /* --- social-buttons --- */
 
-.social-button-list {
+.social-button__list {
   margin-top: 0;
-  margin-bottom: 45px;
+  margin-bottom: 41px;
   padding: 0;
 
   list-style-type: none;
 }
 
-.social-button-list__item {
+.social-button__item {
   display: block;
   float: left;
   margin-right: 20px;
 }
 
-.social-button-list__item:last-child {
+.social-button__item:last-child {
   margin-right: 0;
 }
 
@@ -128,7 +124,7 @@
 
 /* --- contacts-list --- */
 
-.contacts-list {
+.contacts__list {
   margin: 0;
   padding: 0;
 

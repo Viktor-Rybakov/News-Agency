@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <div class="header-top">
       <div class="layout__fix-container clearfix">
         <h1 class="header-top__heading">Самые
@@ -197,9 +197,8 @@
               </article>
             </li>
           </ul>
-          <div class="button">
-            <a class="button__link" href="#">Все новости</a>
-          </div>
+
+          <a class="button" href="#">Все новости</a>
         </section>
 
         <section class="news-main">
@@ -209,7 +208,7 @@
               alt="Изображение крепости с видом на Черное море">
             <a class="news-with-picture__label" href="#">Политика</a>
             <h3 class="news-with-picture__heading">
-              <a class="news-with-picture__heading-link" href="#">В Крыму отреагировали на слова Кравчука о возврате
+              <a class="news-with-picture__heading-link" href="#">В Крыму отреагировали на&nbsp;слова Кравчука о&nbsp;возврате
                 полуострова</a>
             </h3>
 
@@ -220,81 +219,78 @@
             </time>
           </article>
 
-          <div class="news-items-with-small-pictures">
+          <ul class="news-list clearfix">
+            <li class="news-list__item">
+              <article class="news-item">
+                <img class="news-item__image" src="img/news_2.png" alt="Фотография Навального на акции протеста">
+                <h3 class="news-item__heading">
+                  <a class="news-item__heading-link" href="#">Алексей Навальный объявил акцию против пенсионной
+                    реформы 1 июля</a>
+                </h3>
 
-            <ul class="news-list">
-              <li class="news-list__item">
-                <article class="news-item">
-                  <img class="news-item__image" src="img/news_2.png" alt="Фотография Навального на акции протеста">
-                  <h3 class="news-item__heading">
-                    <a class="news-item__heading-link" href="#">Алексей Навальный объявил акцию против пенсионной
-                      реформы 1 июля</a>
-                  </h3>
+                <div class="news-item__props">
+                  <a class="news-item__label" href="#">Политика</a>
 
-                  <div class="news-item__props">
-                    <a class="news-item__label" href="#">Политика</a>
+                  <time class="news-item__time" datetime="10:48">10:48</time>
 
-                    <time class="news-item__time" datetime="10:48">10:48</time>
+                  <span class="news-item__comments-count">15</span>
+                </div>
+              </article>
+            </li>
 
-                    <span class="news-item__comments-count">15</span>
-                  </div>
-                </article>
-              </li>
+            <li class="news-list__item">
+              <article class="news-item">
+                <img class="news-item__image" src="img/news_3.png" alt="Фотография загранпаспортов на столе">
+                <h3 class=" news-item__heading">
+                  <a class="news-item__heading-link" href="#">Дума увеличила пошлины за выдачу загранпаспортов и
+                    водительских прав</a>
+                </h3>
 
-              <li class="news-list__item">
-                <article class="news-item">
-                  <img class="news-item__image" src="img/news_3.png" alt="Фотография загранпаспортов на столе">
-                  <h3 class=" news-item__heading">
-                    <a class="news-item__heading-link" href="#">Дума увеличила пошлины за выдачу загранпаспортов и
-                      водительских прав</a>
-                  </h3>
+                <div class="news-item__props">
+                  <a class="news-item__label" href="#">Общество</a>
 
-                  <div class="news-item__props">
-                    <a class="news-item__label" href="#">Общество</a>
+                  <time class="news-item__time" datetime="10:48">10:48</time>
 
-                    <time class="news-item__time" datetime="10:48">10:48</time>
+                  <span class="news-item__comments-count">15</span>
+                </div>
+              </article>
+            </li>
 
-                    <span class="news-item__comments-count">15</span>
-                  </div>
-                </article>
-              </li>
+            <li class="news-list__item">
+              <article class="news-item">
+                <img class="news-item__image" src="img/news_4.png" alt="Фотография девушки с наушниками">
+                <h3 class="news-item__heading">
+                  <a class="news-item__heading-link" href="#">В России заработал стриминговый сервис YouTube</a>
+                </h3>
 
-              <li class="news-list__item">
-                <article class="news-item">
-                  <img class="news-item__image" src="img/news_4.png" alt="Фотография девушки с наушниками">
-                  <h3 class="news-item__heading">
-                    <a class="news-item__heading-link" href="#">В России заработал стриминговый сервис YouTube</a>
-                  </h3>
+                <div class="news-item__props">
+                  <a class="news-item__label" href="#">Интернет</a>
 
-                  <div class="news-item__props">
-                    <a class="news-item__label" href="#">Интернет</a>
+                  <time class="news-item__time" datetime="10:48">10:48</time>
 
-                    <time class="news-item__time" datetime="10:48">10:48</time>
+                  <span class="news-item__comments-count">15</span>
+                </div>
+              </article>
+            </li>
 
-                    <span class="news-item__comments-count">15</span>
-                  </div>
-                </article>
-              </li>
+            <li class="news-list__item">
+              <article class="news-item">
+                <img class="news-item__image" src="img/news_5.png" alt="Фотография футболиста">
+                <h3 class="news-item__heading">
+                  <a class="news-item__heading-link" href="#">Кейн признан лучшим игроком матча ЧМ-2018 Тунис —
+                    Англия</a>
+                </h3>
 
-              <li class="news-list__item">
-                <article class="news-item">
-                  <img class="news-item__image" src="img/news_5.png" alt="Фотография футболиста">
-                  <h3 class="news-item__heading">
-                    <a class="news-item__heading-link" href="#">Кейн признан лучшим игроком матча ЧМ-2018 Тунис —
-                      Англия</a>
-                  </h3>
+                <div class="news-item__props">
+                  <a class="news-item__label" href="#">Политика</a>
 
-                  <div class="news-item__props">
-                    <a class="news-item__label" href="#">Политика</a>
+                  <time class="news-item__time" datetime="10:48">10:48</time>
 
-                    <time class="news-item__time" datetime="10:48">10:48</time>
-
-                    <span class="news-item__comments-count">15</span>
-                  </div>
-                </article>
-              </li>
-            </ul>
-          </div>
+                  <span class="news-item__comments-count">15</span>
+                </div>
+              </article>
+            </li>
+          </ul>
         </section>
 
         <aside class="banners">
@@ -319,7 +315,7 @@
           <a class="news-with-picture__label" href="#">Политика</a>
 
           <h3 class="news-with-picture__heading">
-            <a class="news-with-picture__heading-link" href="#">Пекин обвинил Вашингтон в развязывании торговой
+            <a class="news-with-picture__heading-link" href="#">Пекин обвинил Вашингтон в&nbsp;развязывании торговой
               войны</a>
           </h3>
 
@@ -439,48 +435,48 @@
           </a>
 
           <nav class="footer-about">
-            <ul class="footer-about-list">
-              <li class="footer-about-list__item">
-                <a class="footer-about-list__item-link" href="#">Об агенстве</a>
+            <ul class="footer-about__list">
+              <li class="footer-about__item">
+                <a class="footer-about__item-link" href="#">Об агенстве</a>
               </li>
 
-              <li class="footer-about-list__item">
-                <a class="footer-about-list__item-link" href="#">Контакты</a>
+              <li class="footer-about__item">
+                <a class="footer-about__item-link" href="#">Контакты</a>
               </li>
 
-              <li class="footer-about-list__item">
-                <a class="footer-about-list__item-link" href="#">Опубликовать новость</a>
+              <li class="footer-about__item">
+                <a class="footer-about__item-link" href="#">Опубликовать новость</a>
               </li>
             </ul>
           </nav>
         </div>
 
         <div class="footer-right">
-          <ul class="social-button-list clearfix">
-            <li class="social-button-list__item">
+          <ul class="social-button__list clearfix">
+            <li class="social-button__item">
               <a class="social-button vk" href="https://vk.com/" target="_blank" aria-label="Вконтакте"></a>
             </li>
 
-            <li class="social-button-list__item">
+            <li class="social-button__item">
               <a class="social-button fb" href="https://www.facebook.com/" target="_blank" aria-label="Фейсбук"></a>
             </li>
 
-            <li class="social-button-list__item">
+            <li class="social-button__item">
               <a class="social-button twitter" href="https://twitter.com/" target="_blank" aria-label="Твиттер"></a>
             </li>
 
-            <li class="social-button-list__item">
+            <li class="social-button__item">
               <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"
                 aria-label="Инстаграмм"></a>
             </li>
           </ul>
 
-          <ul class="contacts-list">
-            <li class="contacts-list__item">
+          <ul class="contacts__list">
+            <li class="contacts__item">
               <a class="footer__phone" href="tel:+74999955555">+7 (499) 995-55-55</a>
             </li>
 
-            <li class="contacts-list__item">
+            <li class="contacts__item">
               <a class="footer__email" href="mailto:info@agency.ru">info@agency.ru</a>
             </li>
           </ul>

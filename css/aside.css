@@ -3,7 +3,7 @@
 .banner {
   display: block;
   width: 250px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .banner:last-child {
