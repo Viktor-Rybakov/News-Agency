@@ -38,7 +38,9 @@
         <span class="header-middle__weather">+22&#8451;</span>
 
         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-          <input class="search-form__text" type="search" placeholder="Поиск по сайту" name="search">
+          <label>
+            <input class="search-form__text" type="search" placeholder="Поиск по сайту" name="search">
+          </label>
           <button class="search-form__button" type="submit" aria-label="Поиск"></button>
         </form>
       </div>
@@ -98,101 +100,101 @@
           </h2>
           <ul class="news-list">
             <li class="news-list__item">
-              <article class="news-item">
+              <article class="news-item clearfix">
                 <h3 class="news-item__heading">
                   <a class="news-item__heading-link" href="#">Кот Ахилл предсказал победу российской сборной над Египтом
                     на ЧМ-2018</a>
                 </h3>
 
+                <a class="news-item__label" href="#">ЧМ по футболу</a>
+
                 <div class="news-item__props">
-                  <a class="news-item__label" href="#">ЧМ по футболу</a>
-
-                  <time class="news-item__time" datetime="10:48">10:48</time>
-
                   <span class="news-item__comments-count">15</span>
+                  
+                  <time class="news-item__time" datetime="10:48">10:48</time>
                 </div>
               </article>
             </li>
 
             <li class="news-list__item">
-              <article class="news-item">
+              <article class="news-item clearfix">
                 <h3 class="news-item__heading">
                   <a class="news-item__heading-link" href="#">«Нафтогаз»: суд разрешил заморозить активы «Газпрома» в
                     Великобритании</a>
                 </h3>
 
-                <div class="news-item__props">
-                  <a class="news-item__label" href="#">Политика</a>
+                <a class="news-item__label" href="#">Политика</a>
+
+                <div class="news-item__props clearfix">
+                  <span class="news-item__comments-count">15</span>
 
                   <time class="news-item__time" datetime="10:48">10:48</time>
-
-                  <span class="news-item__comments-count">15</span>
                 </div>
               </article>
             </li>
 
             <li class="news-list__item">
-              <article class="news-item">
+              <article class="news-item clearfix">
                 <h3 class="news-item__heading">
                   <a class="news-item__heading-link" href="#">Минтранс предписал оборудовать общественный транспорт
                     кондиционерами</a>
                 </h3>
 
+                <a class="news-item__label" href="#">Транспорт</a>
+
                 <div class="news-item__props">
-                  <a class="news-item__label" href="#">Транспорт</a>
+                  <span class="news-item__comments-count">15</span>
 
                   <time class="news-item__time" datetime="10:48">10:48</time>
-
-                  <span class="news-item__comments-count">15</span>
                 </div>
               </article>
             </li>
             <li class="news-list__item">
-              <article class="news-item">
+              <article class="news-item clearfix">
                 <h3 class="news-item__heading">
                   <a class="news-item__heading-link" href="#">Летние кафе Москвы временно закроются из-за непогоды</a>
                 </h3>
 
+                <a class="news-item__label" href="#">Погода</a>
+
                 <div class="news-item__props">
-                  <a class="news-item__label" href="#">Погода</a>
+                  <span class="news-item__comments-count">15</span>
 
                   <time class="news-item__time" datetime="10:48">10:48</time>
-
-                  <span class="news-item__comments-count">15</span>
                 </div>
               </article>
             </li>
 
             <li class="news-list__item">
-              <article class="news-item">
+              <article class="news-item clearfix">
                 <h3 class="news-item__heading">
                   <a class="news-item__heading-link" href="#">Комплексное благоустройство Щелковского шоссе завершится в
                     июне</a>
                 </h3>
 
+                <a class="news-item__label" href="#">Транспорт</a>
+
                 <div class="news-item__props">
-                  <a class="news-item__label" href="#">Транспорт</a>
+                  <span class="news-item__comments-count">15</span>
 
                   <time class="news-item__time" datetime="10:48">10:48</time>
-
-                  <span class="news-item__comments-count">15</span>
                 </div>
               </article>
             </li>
 
             <li class="news-list__item">
-              <article class="news-item">
+              <article class="news-item clearfix">
                 <h3 class="news-item__heading">
                   <a class="news-item__heading-link" href="#">В Москве назвали самое популярное мороженое у болельщиков
                     ЧМ-2018</a>
                 </h3>
 
+                <a class="news-item__label" href="#">ЧМ по футболу</a>
+
                 <div class="news-item__props">
-                  <a class="news-item__label" href="#">ЧМ по футболу</a>
+                  <span class="news-item__comments-count">15</span>
 
                   <time class="news-item__time" datetime="10:48">10:48</time>
-
-                  <span class="news-item__comments-count">15</span>
                 </div>
               </article>
             </li>
@@ -208,11 +210,12 @@
               alt="Изображение крепости с видом на Черное море">
             <a class="news-with-picture__label" href="#">Политика</a>
             <h3 class="news-with-picture__heading">
-              <a class="news-with-picture__heading-link" href="#">В Крыму отреагировали на&nbsp;слова Кравчука о&nbsp;возврате
+              <a class="news-with-picture__heading-link" href="#">В Крыму отреагировали на&nbsp;слова Кравчука
+                о&nbsp;возврате
                 полуострова</a>
             </h3>
 
-            <time class="news-with-picture__datetime" datetime="2018-06-19T10:48:00">
+            <time class="news-with-picture__datetime clearfix" datetime="2018-06-19T10:48:00">
               <a class="news-with-picture__date" href="#">19 июня 2018</a>
 
               <span class="news-with-picture__time">10:48</span>
@@ -221,72 +224,72 @@
 
           <ul class="news-list clearfix">
             <li class="news-list__item">
-              <article class="news-item">
+              <article class="news-item clearfix">
                 <img class="news-item__image" src="img/news_2.png" alt="Фотография Навального на акции протеста">
                 <h3 class="news-item__heading">
                   <a class="news-item__heading-link" href="#">Алексей Навальный объявил акцию против пенсионной
                     реформы 1 июля</a>
                 </h3>
 
+                <a class="news-item__label" href="#">Политика</a>
+
                 <div class="news-item__props">
-                  <a class="news-item__label" href="#">Политика</a>
+                  <span class="news-item__comments-count">15</span>
 
                   <time class="news-item__time" datetime="10:48">10:48</time>
-
-                  <span class="news-item__comments-count">15</span>
                 </div>
               </article>
             </li>
 
             <li class="news-list__item">
-              <article class="news-item">
+              <article class="news-item clearfix">
                 <img class="news-item__image" src="img/news_3.png" alt="Фотография загранпаспортов на столе">
                 <h3 class=" news-item__heading">
                   <a class="news-item__heading-link" href="#">Дума увеличила пошлины за выдачу загранпаспортов и
                     водительских прав</a>
                 </h3>
 
+                <a class="news-item__label" href="#">Общество</a>
+
                 <div class="news-item__props">
-                  <a class="news-item__label" href="#">Общество</a>
+                  <span class="news-item__comments-count">15</span>
 
                   <time class="news-item__time" datetime="10:48">10:48</time>
-
-                  <span class="news-item__comments-count">15</span>
                 </div>
               </article>
             </li>
 
             <li class="news-list__item">
-              <article class="news-item">
+              <article class="news-item clearfix">
                 <img class="news-item__image" src="img/news_4.png" alt="Фотография девушки с наушниками">
                 <h3 class="news-item__heading">
                   <a class="news-item__heading-link" href="#">В России заработал стриминговый сервис YouTube</a>
                 </h3>
 
+                <a class="news-item__label" href="#">Интернет</a>
+
                 <div class="news-item__props">
-                  <a class="news-item__label" href="#">Интернет</a>
+                  <span class="news-item__comments-count">15</span>
 
                   <time class="news-item__time" datetime="10:48">10:48</time>
-
-                  <span class="news-item__comments-count">15</span>
                 </div>
               </article>
             </li>
 
             <li class="news-list__item">
-              <article class="news-item">
+              <article class="news-item clearfix">
                 <img class="news-item__image" src="img/news_5.png" alt="Фотография футболиста">
                 <h3 class="news-item__heading">
                   <a class="news-item__heading-link" href="#">Кейн признан лучшим игроком матча ЧМ-2018 Тунис —
                     Англия</a>
                 </h3>
 
+                <a class="news-item__label" href="#">Политика</a>
+
                 <div class="news-item__props">
-                  <a class="news-item__label" href="#">Политика</a>
+                  <span class="news-item__comments-count">15</span>
 
                   <time class="news-item__time" datetime="10:48">10:48</time>
-
-                  <span class="news-item__comments-count">15</span>
                 </div>
               </article>
             </li>
@@ -319,7 +322,7 @@
               войны</a>
           </h3>
 
-          <time class="news-with-picture__datetime" datetime="2018-06-19T10:48:00">
+          <time class="news-with-picture__datetime clearfix" datetime="2018-06-19T10:48:00">
             <a class="news-with-picture__date" href="#">19 июня 2018</a>
 
             <span class="news-with-picture__time">10:48</span>
@@ -332,52 +335,52 @@
 
         <ul class="news-list">
           <li class="news-list__item">
-            <article class="news-item">
+            <article class="news-item clearfix">
               <h3 class="news-item__heading">
                 <a class="news-item__heading-link" href="#">В Турции пообещали найти альтернативу из-за отказа США
                   поставить F-35</a>
               </h3>
 
+              <a class="news-item__label" href="#">Политика</a>
+
               <div class="news-item__props">
-                <a class="news-item__label" href="#">Политика</a>
+                <span class="news-item__comments-count">15</span>
 
                 <time class="news-item__time" datetime="10:48">10:48</time>
-
-                <span class="news-item__comments-count">15</span>
               </div>
             </article>
           </li>
 
           <li class="news-list__item">
-            <article class="news-item">
+            <article class="news-item clearfix">
               <h3 class="news-item__heading">
                 <a class="news-item__heading-link" href="#">Назван минимальный доход для причисления к среднему
                   классу‍</a>
               </h3>
 
+              <a class="news-item__label" href="#">Политика</a>
+
               <div class="news-item__props">
-                <a class="news-item__label" href="#">Политика</a>
+                <span class="news-item__comments-count">15</span>
 
                 <time class="news-item__time" datetime="10:48">10:48</time>
-
-                <span class="news-item__comments-count">15</span>
               </div>
             </article>
           </li>
 
           <li class="news-list__item">
-            <article class="news-item">
+            <article class="news-item clearfix">
               <h3 class="news-item__heading">
                 <a class="news-item__heading-link" href="#">Назван минимальный доход для причисления к среднему
                   классу‍</a>
               </h3>
 
+              <a class="news-item__label" href="#">Политика</a>
+
               <div class="news-item__props">
-                <a class="news-item__label" href="#">Политика</a>
+                <span class="news-item__comments-count">15</span>
 
                 <time class="news-item__time" datetime="10:48">10:48</time>
-
-                <span class="news-item__comments-count">15</span>
               </div>
             </article>
           </li>
