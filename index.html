@@ -35,7 +35,7 @@
           <span class="header-middle__time">10:48</span>
         </time>
 
-        <span class="header-middle__weather">+22&#8451;</span>
+        <span class="header-middle__weather">+22 &#8451;</span>
 
         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
           <label>
@@ -95,11 +95,11 @@
     <div class="layout__fix-container">
       <div class="main__top clearfix">
         <section class="news-today">
-          <h2 class="news-list__heading">
+          <h2 class="news-list__heading js-news-list__heading">
             <a class="news-list__heading-link" href="#">Новости дня</a>
           </h2>
           <ul class="news-list">
-            <li class="news-list__item">
+            <li class="news-list__item js-news-list__item">
               <article class="news-item clearfix">
                 <h3 class="news-item__heading">
                   <a class="news-item__heading-link" href="#">Кот Ахилл предсказал победу российской сборной над Египтом
@@ -110,13 +110,13 @@
 
                 <div class="news-item__props">
                   <span class="news-item__comments-count">15</span>
-                  
+
                   <time class="news-item__time" datetime="10:48">10:48</time>
                 </div>
               </article>
             </li>
 
-            <li class="news-list__item">
+            <li class="news-list__item js-news-list__item">
               <article class="news-item clearfix">
                 <h3 class="news-item__heading">
                   <a class="news-item__heading-link" href="#">«Нафтогаз»: суд разрешил заморозить активы «Газпрома» в
@@ -133,7 +133,7 @@
               </article>
             </li>
 
-            <li class="news-list__item">
+            <li class="news-list__item js-news-list__item">
               <article class="news-item clearfix">
                 <h3 class="news-item__heading">
                   <a class="news-item__heading-link" href="#">Минтранс предписал оборудовать общественный транспорт
@@ -149,7 +149,8 @@
                 </div>
               </article>
             </li>
-            <li class="news-list__item">
+
+            <li class="news-list__item js-news-list__item">
               <article class="news-item clearfix">
                 <h3 class="news-item__heading">
                   <a class="news-item__heading-link" href="#">Летние кафе Москвы временно закроются из-за непогоды</a>
@@ -165,7 +166,7 @@
               </article>
             </li>
 
-            <li class="news-list__item">
+            <li class="news-list__item js-news-list__item">
               <article class="news-item clearfix">
                 <h3 class="news-item__heading">
                   <a class="news-item__heading-link" href="#">Комплексное благоустройство Щелковского шоссе завершится в
@@ -182,7 +183,7 @@
               </article>
             </li>
 
-            <li class="news-list__item">
+            <li class="news-list__item js-news-list__item">
               <article class="news-item clearfix">
                 <h3 class="news-item__heading">
                   <a class="news-item__heading-link" href="#">В Москве назвали самое популярное мороженое у болельщиков
@@ -200,7 +201,24 @@
             </li>
           </ul>
 
-          <a class="button" href="#">Все новости</a>
+          <a class="button js-button" href="#">Все новости</a>
+
+          <section class="exhange-rate js-exhange-rate hidden">
+            <h2 class="exhange-rate__heading">Курс валют</h2>
+            <table class="exhange-rate__table">
+              <tbody>
+                <tr class="exhange-rate__table-row">
+                  <td class="exhange-rate__table-cell">Доллар США $</td>
+                  <td class="exhange-rate__table-cell js-dollar-rate"></td>
+                </tr>
+                <tr class="exhange-rate__table-row">
+                  <td class="exhange-rate__table-cell">Евро &euro;</td>
+                  <td class="exhange-rate__table-cell js-euro-rate"></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
         </section>
 
         <section class="news-main">
@@ -489,6 +507,9 @@
 
     <p class="footer__copyright">&copy; Новостное агентство, 2017-2018 все права защищены</p>
   </footer>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 
