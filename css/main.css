@@ -305,3 +305,43 @@
 
   background-color: #0072bc;
 }
+
+/* --- Exchange-rate --- */
+
+.exhange-rate {
+  margin-bottom: 5px;
+}
+
+.exhange-rate__heading {
+  margin: 0 0 5px 0;
+  padding: 10px 20px 16px 18px;
+  
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.4px;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.exhange-rate__table {
+  width: 100%;
+
+  font-size: 14px;
+
+  border-collapse: collapse;
+  border: none;
+}
+
+.exhange-rate__table-row {
+  height: 30px;
+}
+
+.exhange-rate__table-cell:first-child {
+  width: 60%;
+  padding-left: 18px;
+}
+
+.exhange-rate__table-cell:last-child {
+  width: 40%;
+  padding-right: 18px;
+}
