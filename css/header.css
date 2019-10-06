@@ -3,6 +3,7 @@
 /* ---header-rows--- */
 
 .header-top {
+  margin-bottom: 40px;
   padding: 19px 0 18px 0;
 
   color: #ffffff;
@@ -11,7 +12,6 @@
 }
 
 .header-middle {
-  padding-top: 40px;
   margin-bottom: 35px;
 }
 
@@ -59,16 +59,28 @@
 .cityes {
   float: left;
   margin-top: 13px;
-  margin-right: 47px;
-  padding-right: 18px;
+  margin-right: 5px;
 
   color: #0072bc;
 
+  border-bottom: 2px dotted #0072bc;
+}
+
+.city-choise {
+  float:left;
+  margin-top: 13px;
+  margin-right: 42px;
+  width: 5px;
+  height: 20px;
+
+  background-color: transparent;
   background-image: url('../img/down-arrow.png');
   background-repeat: no-repeat;
-  background-position-x: right;
   background-position-y: center;
-  border-bottom: 2px dotted #0072bc;
+  border: none;
+
+  outline: none;
+  cursor: pointer;
 }
 
 .header-middle__datetime {
@@ -97,6 +109,7 @@
 
 .header-middle__weather {
   float: left;
+  height: 21px;
   margin-top: 12px;
   padding-left: 39px;
 
@@ -141,8 +154,9 @@
   padding: 0;
 
   background-color: transparent;
-  background-image: url("../img/search.png");
-  border-width: 0;
+  background-image: url('../img/search.png');
+  background-repeat: no-repeat;
+  border: none;
   
   outline: none;
   cursor: pointer;
@@ -162,22 +176,28 @@
 
 .header-menu__item {
   display: inline-block;
+  margin-right: 12px;
 }
 
 .header-menu__item::after {
   content: "/";
-  margin-left: 19px;
-  margin-right: 12px;
+}
+
+.header-menu__item:last-child {
+  margin-right: 0;
 }
 
 .header-menu__item:last-child::after {
   content: "";
-  margin-left: 0;
-  margin-right: 0;
 }
 
 .header-menu__item-link {
   letter-spacing: -0.32px;
+  margin-right: 19px;
+}
+
+.header-menu__item:last-child .header-menu__item-link {
+  margin-right: 0;
 }
 
 .header-menu__item-link:hover {

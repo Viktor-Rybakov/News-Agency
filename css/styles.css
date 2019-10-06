@@ -9,10 +9,10 @@ html {
 }
 
 body {
-  min-width: 320px;
+  min-width: 1000px;
   margin: 0;
   background-color: #f9f9f9;
-  font-family: "", "Arial", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   /* line-height: ; */
   color: #000000;
