@@ -34,25 +34,26 @@
   width: 25%;
 }
 
-.news-most-reading {
-  background-color: #ffffff;
-}
-
 .news-most-reading .news-with-picture {
   float: left;
-  width: 59%;  
+  min-height: 393px;
+  width: 58.8%;  
 }
 
 .news-most-reading .news-list {
   float: right;
-  width: 41%;
+  width: 41.2%;
   padding-left: 20px;
   padding-right: 20px;
+
+  background-color: #ffffff;
 }
 
 .news-most-reading .news-list__heading {
   float: right;
-  width: 41%;
+  width: 41.2%;
+
+  background-color: #ffffff;
 }
 
 
@@ -60,6 +61,7 @@
 
 .news-list {
   margin: 0;
+  padding-top: 28px;
   padding-left: 18px;
   padding-right: 18px;
 
@@ -67,6 +69,7 @@
 }
 
 .news-main .news-list {
+  padding-top: 0;
   padding-left: 0;
   padding-right: 0;
 }
@@ -82,12 +85,12 @@
   padding: 0;
 }
 
-.news-main .news-list__item:nth-child(2n+1) {
+.news-main .news-list__item:nth-child(odd) {
   margin-right: 20px;
 }
 
 .news-list__heading {
-  margin: 0 0 28px 0;
+  margin: 0;
   padding: 24px 20px 22px 18px;
   
   font-size: 20px;
@@ -182,6 +185,9 @@
 
 .news-with-picture {
   position: relative;
+
+  min-height: 322px;
+  padding-top: 113px;
 }
 
 .news-main .news-with-picture {
@@ -189,16 +195,20 @@
 }
 
 .news-with-picture__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
   display: block;
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .news-with-picture__label {
-  position: absolute;
-  top: 113px;
-  z-index: 100;
-
+  display: block;
   padding-left: 22px;
+  margin-bottom: 18px;
 
   font-size: 12px;
   color: #ffffff;
@@ -214,11 +224,8 @@
 }
 
 .news-with-picture__heading {
-  position: absolute;
-  top: 143px;
-  z-index: 100;
-
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 18px;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -234,10 +241,8 @@
 }
 
 .news-with-picture__datetime {
-  position: absolute;
-  top: 270px;
-  z-index: 100;
-
+  display: block;
+  
   padding-left: 20px;
 }
 
@@ -267,10 +272,8 @@
 }
 
 .news-with-picture__description {
-  position: absolute;
-  top: 285px;
-  z-index: 100;
-
+  margin-top: 30px;
+  margin-bottom: 0;
   padding-left: 20px;
   padding-right: 20px;
 
