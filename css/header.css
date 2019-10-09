@@ -3,7 +3,7 @@
 /* ---header-rows--- */
 
 .header {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .header-top {
@@ -61,7 +61,7 @@
   margin-right: 49px;
   padding-right: 17px;
 
-  background-image: url('../img/down-arrow.png');
+  background-image: url('../img/header-down-arrow.png');
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: center;
@@ -93,7 +93,7 @@
 
   color: #91919f;
 
-  background-image: url("../img/clock.png");
+  background-image: url("../img/header-clock.png");
   background-repeat: no-repeat;
   background-position-y: center;
 }
@@ -106,7 +106,7 @@
 
   color: #91919f;
 
-  background-image: url("../img/cloudy.png");
+  background-image: url("../img/header-weather.png");
   background-repeat: no-repeat;
   background-position-y: center;
 }
@@ -145,7 +145,7 @@
   padding: 0;
 
   background-color: transparent;
-  background-image: url('../img/search.png');
+  background-image: url('../img/header-search.png');
   background-repeat: no-repeat;
   border: none;
   

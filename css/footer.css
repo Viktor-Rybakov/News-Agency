@@ -1,16 +1,24 @@
 /* -------- Footer --------- */
 
 .footer {
+  padding-top: 46px;
+  padding-bottom: 19px;
+
   color: #ffffff;
 
   background-color: #00122f;
 }
 
 .footer-top {
-  padding-top: 46px;
   padding-bottom: 48px;
+  margin-bottom: 19px;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.footer-left {
+  float: left;
+  margin-right: 239px;
 }
 
 .footer-center {
@@ -26,11 +34,6 @@
 
 /* --- footer-menu --- */
 /* --- footer-about --- */
-
-.footer-menu {
-  float: left;
-  margin-right: 239px;
-}
 
 .footer-menu__list,
 .footer-about__list {
@@ -127,27 +130,31 @@
   list-style-type: none;
 }
 
-.footer__phone {
-  display: block;
+.contacts__item {
   margin-bottom: 26px;
-  padding-left: 30px;
 
   font-size: 18px;
+}
 
-  background-image: url("../img/call-answer_icon.png");
+.contacts__item:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__item-link {
+  display: block;
+  padding-left: 30px;
+
   background-repeat: no-repeat;
   background-position-y: center;
 }
 
+.footer__phone {
+  background-image: url("../img/footer-pfone-icon.png");
+
+}
+
 .footer__email {
-  display: block;
-  padding-left: 30px;
-
-  font-size: 18px;
-
-  background-image: url("../img/mail_icon.png");
-  background-repeat: no-repeat;
-  background-position-y: center;
+  background-image: url("../img/footer-email-icon.png.png");
 }
 
 .footer__phone:hover,
@@ -160,8 +167,6 @@
 
 .footer__copyright {
   margin: 0;
-  padding-top: 19px;
-  padding-bottom: 19px;
 
   font-size: 14px;
   text-align: center;
