@@ -100,7 +100,7 @@
 
 .header-middle__weather {
   float: left;
-  height: 21px;
+  min-height: 21px;
   margin-top: 12px;
   padding-left: 39px;
 
