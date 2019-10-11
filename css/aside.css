@@ -3,7 +3,7 @@
 .banner {
   display: block;
   width: 250px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .banner:last-child {
@@ -11,5 +11,6 @@
 }
 
 .banner__image {
+  display: block;
   width: 100%;
 }

@@ -11,18 +11,18 @@ $(function(){
       if (response.success === true) {
         exhangeRateElem.removeClass('hidden');
 
-        $('.js-news-list__heading').css(
-          'margin-bottom', '10px'
-        );
+        $('.js-news-list').css({
+          'padding-top': '15px'
+        });
 
-        $('.js-news-list__item').css(
-          'margin-bottom', '12px'
-        );
+        $('.js-news-list__item').css({
+          'margin-bottom': '12px'
+        });
 
-        $('.js-button').css(
-          'margin-bottom', '10px',
-          'margin-top', '23x'
-        );
+        $('.js-button').css({
+          'margin-bottom': '10px',
+          'margin-top': '23px'
+        });
 
         var rateRubEuro = response.rates.RUB;
         var rateUsdEuro = response.rates.USD;

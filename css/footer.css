@@ -166,6 +166,7 @@
 /* --- Copyright --- */
 
 .footer__copyright {
+  max-width: 1000px;
   margin: 0;
 
   font-size: 14px;
