@@ -10,27 +10,25 @@
 }
 
 .main__top {
+  display: flex;
+  justify-content: space-between;
+
   margin-bottom: 15px;
 }
 
 .news-today {
-  float: left;
   width: 25%;
-  margin-right: 2%;
 
   background-color: #ffffff;
 }
 
 .news-main {
-  float: left;
   width: 46%;
-  margin-right: 2%;
 
   background: transparent;
 }
 
 .banners {
-  float: right;
   width: 25%;
 }
 
@@ -47,6 +45,11 @@
 }
 
 .news-main .news-list {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+
   padding-top: 0;
   padding-left: 0;
   padding-right: 0;
@@ -65,14 +68,13 @@
 }
 
 .news-main .news-list__item {
-  float: left;
   width: 220px;
   margin-bottom: 23px;
 }
 
-.news-main .news-list__item:nth-child(odd) {
+/* .news-main .news-list__item:nth-child(odd) {
   margin-right: 20px;
-}
+} */
 
 .news-list__heading {
   margin: 0;
