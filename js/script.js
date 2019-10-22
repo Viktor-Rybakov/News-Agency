@@ -12,16 +12,16 @@ $(function(){
         exhangeRateElem.removeClass('hidden');
 
         $('.js-news-list').css({
-          'padding-top': '15px'
+          'padding-top': '15px',
+          'margin-bottom': '20px'
         });
 
         $('.js-news-list__item').css({
           'margin-bottom': '12px'
         });
 
-        $('.js-button').css({
-          'margin-bottom': '10px',
-          'margin-top': '23px'
+        $('.js-news-list__item:last-child').css({
+          'margin-bottom': '0'
         });
 
         var rateRubEuro = response.rates.RUB;

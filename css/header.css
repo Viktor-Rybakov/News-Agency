@@ -23,7 +23,7 @@
 /* --- header-top-row-elements --- */
 
 .header-top__heading {
-  margin: 0;
+  margin: 0 20px 0 0;
 
   font-size: 16px;
   font-weight: 400;
@@ -49,15 +49,12 @@
 
 .header-logo_image {
   display: block;
-  float: left;
-  margin-right: 60px;
+  align-self: center;
 }
 
 .city-choise__link {
   display: block;
-  float: left;
-  margin-top: 13px;
-  margin-right: 49px;
+  align-self: baseline;
   padding-right: 17px;
 
   background-image: url('../img/header-down-arrow.png');
@@ -74,20 +71,17 @@
 }
 
 .header-middle__datetime {
-  float: left;
-  margin-top: 12px;
-  margin-right: 29px;
+  display: block;
+  align-self: baseline;
 }
 
 .header-middle__date {
-  float: left;  
   margin-right: 34px;
 
   letter-spacing: -0.32px;
 }
 
 .header-middle__time {
-  float: left;
   padding-left: 24px;
 
   color: #91919f;
@@ -98,9 +92,9 @@
 }
 
 .header-middle__weather {
-  float: left;
+  display: block;
+  align-self: baseline;
   min-height: 21px;
-  margin-top: 12px;
   padding-left: 39px;
 
   color: #91919f;
@@ -115,8 +109,7 @@
 
 .search-form {
   position: relative;
-
-  float: right;
+  align-self: baseline;
 }
 
 .search-form__text {
@@ -130,8 +123,6 @@
   background-color: #f3f3f3;
   border-width: 0;
   border-radius: 22.5px;
-  
-  outline: none;
 }
 
 .search-form__button {
@@ -155,6 +146,9 @@
 /* --- header-menu --- */
 
 .header-menu__list {
+  display: flex;
+  justify-content: space-between;
+
   margin: 0;
   padding: 0;
 
@@ -164,16 +158,11 @@
 }
 
 .header-menu__item {
-  display: inline-block;
-  margin-right: 12px;
+  display: block;
 }
 
 .header-menu__item::after {
   content: "/";
-}
-
-.header-menu__item:last-child {
-  margin-right: 0;
 }
 
 .header-menu__item:last-child::after {
@@ -185,6 +174,7 @@
   margin-right: 19px;
 }
 
+.header-menu__item:last-child,
 .header-menu__item:last-child .header-menu__item-link {
   margin-right: 0;
 }

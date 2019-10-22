@@ -16,18 +16,11 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.footer-left {
-  float: left;
-  margin-right: 239px;
-}
-
 .footer-center {
-  float: left;
   padding-top: 13px;
 }
 
 .footer-right {
-  float: right;
   padding-top: 11px;
 }
 
@@ -71,6 +64,9 @@
 /* --- social-buttons --- */
 
 .social-button__list {
+  display: flex;
+  justify-content: space-between;
+
   margin-top: 0;
   margin-bottom: 41px;
   padding: 0;
@@ -80,7 +76,6 @@
 
 .social-button__item {
   display: block;
-  float: left;
   margin-right: 20px;
 }
 
