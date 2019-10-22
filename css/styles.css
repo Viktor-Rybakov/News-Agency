@@ -54,6 +54,12 @@ a {
 	margin: 0 auto;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
 .hidden {
   display: none;
 }
