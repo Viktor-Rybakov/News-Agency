@@ -8,7 +8,7 @@ $(function(){
     {'access_key': '93e07e94dae55ca0b24ea3f9a672a975'},
     function(response){
 
-      if (response.success === true) {
+      if (response.success) {
         exhangeRateElem.removeClass('hidden');
 
         $('.js-news-list').css({
