@@ -43,7 +43,7 @@
 
 .footer-menu__item,
 .footer-about__item {
-  line-height: 33px;
+  line-height: 2em;
 }
 
 .footer-menu__item-link:hover,

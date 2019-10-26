@@ -88,7 +88,7 @@
 
   background-image: url("../img/header-clock.png");
   background-repeat: no-repeat;
-  background-position-y: center;
+  background-position: 0 50%;
 }
 
 .header-middle__weather {
@@ -101,7 +101,7 @@
 
   background-image: url("../img/header-weather.png");
   background-repeat: no-repeat;
-  background-position-y: center;
+  background-position: 0 50%;
 }
 
 
