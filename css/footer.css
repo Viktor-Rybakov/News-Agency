@@ -128,7 +128,7 @@
 .contacts__item {
   margin-bottom: 26px;
 
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .contacts__item:last-child {
@@ -164,7 +164,7 @@
   max-width: 1000px;
   margin: 0;
 
-  font-size: 14px;
+  font-size: 0.875rem;
   text-align: center;
 
   opacity: 0.4;
