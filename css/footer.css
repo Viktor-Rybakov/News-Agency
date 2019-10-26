@@ -2,7 +2,7 @@
 
 .footer {
   padding-top: 46px;
-  padding-bottom: 19px;
+  padding-bottom: 1.125em;
 
   color: #ffffff;
 
@@ -11,7 +11,7 @@
 
 .footer-top {
   padding-bottom: 48px;
-  margin-bottom: 19px;
+  margin-bottom: 1.125em;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
@@ -57,7 +57,7 @@
 .footer-logo {
   display: block;
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 0.5em;
 }
 
 
@@ -89,7 +89,7 @@
   height: 40px;
 
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 50% 50%;
   border: 1px solid #ffffff;
   border-radius: 50%;
 }
@@ -126,7 +126,7 @@
 }
 
 .contacts__item {
-  margin-bottom: 26px;
+  margin-bottom: 1.3em;
 
   font-size: 1.125rem;
 }
@@ -161,7 +161,6 @@
 /* --- Copyright --- */
 
 .footer__copyright {
-  max-width: 1000px;
   margin: 0;
 
   font-size: 0.875rem;

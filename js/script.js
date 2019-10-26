@@ -13,7 +13,7 @@ $(function(){
 
         $('.js-news-list').css({
           'padding-top': '15px',
-          'margin-bottom': '20px'
+          'margin-bottom': '23px'
         });
 
         $('.js-news-list__item').css({
@@ -21,6 +21,10 @@ $(function(){
         });
 
         $('.js-news-list__item:last-child').css({
+          'margin-bottom': '0'
+        });
+
+        $('.js-button').css({
           'margin-bottom': '0'
         });
 

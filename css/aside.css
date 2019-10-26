@@ -2,6 +2,11 @@
 
 .banner {
   display: block;
+  margin-bottom: 20px;
+}
+
+.banner:last-child {
+  margin-bottom: 0;
 }
 
 .banner__image {
