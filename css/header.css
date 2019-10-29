@@ -16,6 +16,10 @@
 }
 
 .header-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
   margin-bottom: 35px;
 }
 
@@ -55,7 +59,6 @@
 .city-choise__link {
   display: block;
   min-height: 5px;
-  align-self: baseline;
   padding-right: 17px;
 
   background-image: url('../img/header-down-arrow.png');
@@ -75,8 +78,6 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-
-  align-self: baseline;
 }
 
 .header-middle__date {
@@ -98,7 +99,6 @@
 
 .header-middle__weather {
   display: block;
-  align-self: baseline;
   min-height: 21px;
   padding-left: 39px;
   padding-top: 3px;
@@ -115,7 +115,6 @@
 
 .search-form {
   position: relative;
-  align-self: baseline;
 }
 
 .search-form__text {
@@ -154,7 +153,8 @@
 
 .header-menu__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: baseline;
   flex-wrap: wrap;
 
   margin: 0;
@@ -165,6 +165,7 @@
 
 .header-menu__item {
   display: block;
+  margin-right: 1.125em;
 }
 
 .header-menu__item::after {
