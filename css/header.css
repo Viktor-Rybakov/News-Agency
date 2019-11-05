@@ -191,3 +191,15 @@
   
   border-bottom: 2px dotted #0072bc;
 }
+
+@media (max-width: 500px) {
+
+  .header-top__datetime {
+    display: none;
+  }
+
+  .header-top__heading {
+    margin: 0 auto;
+  }
+
+}
