@@ -192,6 +192,33 @@
   border-bottom: 2px dotted #0072bc;
 }
 
+
+
+@media (max-width: 940px) {
+
+  .header-menu__item {
+    margin-right: 1em;
+  }
+  
+  .header-menu__item-link {
+    margin-right: 1em;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .header-menu__item {
+    margin-right: 0.25em;
+  }
+  
+  .header-menu__item-link {
+    margin-right: 0.25em;
+  }
+
+}
+
+
 @media (max-width: 500px) {
 
   .header-top__datetime {
@@ -202,4 +229,7 @@
     margin: 0 auto;
   }
 
+  .header-menu {
+    display: none;
+  }
 }
