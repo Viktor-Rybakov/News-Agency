@@ -11,12 +11,13 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/aside.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/media_queries.css">
 </head>
 
 <body>
   <header class="header">
     <div class="header-top">
-      <div class="fix-container flex-container">
+      <div class="fix-container header__flex-container">
         <h1 class="header-top__heading">Самые
           <a class="header-top__heading-link" href="#">свежие новости</a> в реальном времени
         </h1>
@@ -26,7 +27,12 @@
     </div>
 
     <div class="header-middle fix-container">
-      <img class="header-logo_image" src="img/logo.png" alt="Логотип новостного агенства">
+      <picture class="header-logo_image">
+        <source media="(min-width: 500px)" srcset="img/logo.png">
+        
+        <img src="img/logo-mobile.png" alt="Логотип новостного агенства">
+      </picture>
+      
 
       <a class="city-choise__link" href="#">
         <span class="city-choise__text">Москва</span>
@@ -43,6 +49,8 @@
         <input class="search-form__text" type="search" placeholder="Поиск по сайту" name="search">
         <button class="search-form__button" type="submit" aria-label="Поиск"></button>
       </form>
+
+      <button class="search-form__button--mobile" type="button" aria-label="Поиск"></button>
     </div>
 
     <nav class="header-bottom header-menu fix-container">
@@ -88,7 +96,16 @@
 
   <main class="main">
     <div class="fix-container">
-      <div class="main__top">
+      <div class="main-header">
+          <time class="main-header__datetime" datetime="2019-06-19T10:48:00">
+            <span class="main-header__date">19 июня, вт</span>
+            <span class="main-header__time">10:48</span>
+          </time>
+      
+          <span class="main-header__weather">+22 &#8451;</span>
+      </div>
+
+      <div class="main-top">
         <section class="news-today">
           <h2 class="news-list__heading">
             <a class="news-list__heading-link" href="#">Новости дня</a>
@@ -405,7 +422,7 @@
 
   <footer class="footer">
     <div class="footer-top">
-      <div class="fix-container flex-container">
+      <div class="fix-container footer__flex-container">
         <nav class="footer-left">
           <ul class="footer-menu__list">
             <li class="footer-menu__item">
