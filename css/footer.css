@@ -24,10 +24,25 @@
   padding-top: 11px;
 }
 
+@media (max-width: 500px) {
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    margin-left: 20px;
+  }
+}
+
 .footer__flex-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 500px) {
+  .footer__flex-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /* --- footer-menu --- */
