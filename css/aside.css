@@ -5,6 +5,12 @@
   margin-bottom: 20px;
 }
 
+@media (max-width: 560px) {
+  .banner {
+    margin-bottom: 0;
+  }
+}
+
 .banner:last-child {
   margin-bottom: 0;
 }

@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/aside.css">
   <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/media_queries.css">
 </head>
 
 <body>
@@ -27,8 +26,14 @@
     </div>
 
     <div class="header-middle fix-container">
+      <div class="icon-burger--mobile">
+        <span class="icon-burger__bar"></span>
+        <span class="icon-burger__bar"></span>
+        <span class="icon-burger__bar"></span>
+      </div>
+
       <picture class="header-logo_image">
-        <source media="(min-width: 500px)" srcset="img/logo.png">
+        <source media="(min-width: 559px)" srcset="img/logo.png">
         
         <img src="img/logo-mobile.png" alt="Логотип новостного агенства">
       </picture>
@@ -92,19 +97,19 @@
         </li>
       </ul>
     </nav>
+
+    <div class="header-bottom--mobile">
+      <time class="header-bottom__datetime--mobile" datetime="2019-06-19T10:48:00">
+        <span class="header-bottom__date--mobile">19 июня, вт</span>
+        <span class="header-bottom__time--mobile">10:48</span>
+      </time>
+
+      <span class="header-bottom__weather--mobile">+22 &#8451;</span>
+    </div>
   </header>
 
   <main class="main">
     <div class="fix-container">
-      <div class="main-header">
-          <time class="main-header__datetime" datetime="2019-06-19T10:48:00">
-            <span class="main-header__date">19 июня, вт</span>
-            <span class="main-header__time">10:48</span>
-          </time>
-      
-          <span class="main-header__weather">+22 &#8451;</span>
-      </div>
-
       <div class="main-top">
         <section class="news-today">
           <h2 class="news-list__heading">
