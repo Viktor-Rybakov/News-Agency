@@ -24,7 +24,7 @@
   padding-top: 11px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 560px) {
   .footer-left,
   .footer-center,
   .footer-right {
@@ -38,10 +38,10 @@
   align-items: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 560px) {
   .footer__flex-container {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -58,7 +58,7 @@
 
 .footer-menu__list {
   column-count: 2;
-  column-gap: 39%;
+  /* column-gap: 39%; */
 }
 
 .footer-menu__item,

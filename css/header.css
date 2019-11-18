@@ -64,6 +64,8 @@
 @media (max-width: 560px) {
   .header-top__heading {
     margin: 0 auto;
+
+    font-size: 0.8125rem;
   }
 }
 
@@ -91,12 +93,18 @@
 /* --- header-middle-row-elements --- */
 
 .icon-burger--mobile {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 20px;
   height: 16px;
   margin-left: 25px;
+}
+
+@media (max-width: 560px) {
+  .icon-burger--mobile {
+    display: flex;
+  }
 }
 
 /* .icon-burger--mobile:hover {
@@ -112,8 +120,6 @@
 
   background: #000000;
 }
-
-
 
 .header-logo_image {
   display: block;
