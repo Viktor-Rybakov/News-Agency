@@ -226,6 +226,12 @@
   font-weight: bold;
 }
 
+@media (max-width: 560px) {
+  .news-most-reading .news-item__heading {
+    letter-spacing: -0.28px;
+  }
+}
+
 .news-item__heading:hover {
   color: #0072bc;
 }
