@@ -162,6 +162,13 @@
   word-wrap: break-word;
 }
 
+@media (max-width: 560px) {
+  .news-list__heading {
+    margin: 0 25px;
+    padding: 23px 0;
+  }
+}
+
 .news-list__heading:hover {
   color: #0072bc;
 }
