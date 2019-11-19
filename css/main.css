@@ -204,6 +204,8 @@
 @media (max-width: 560px) {
   .news-item__heading {
     margin-bottom: 18px;
+
+    letter-spacing: -0.28px;
   }
 }
 
@@ -387,6 +389,8 @@
   .news-with-picture__heading {
     font-size: 1.375rem;
     line-height: 1.273em;
+
+    letter-spacing: -0.44px;
   }
 }
 

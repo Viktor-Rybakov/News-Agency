@@ -93,6 +93,8 @@
 /* --- header-middle-row-elements --- */
 
 .icon-burger--mobile {
+  position: relative;
+
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -108,6 +110,7 @@
 }
 
 /* .icon-burger--mobile:hover {
+  top: -3px;
   height: 20px;
 
   transition-duration: 0.3s;
