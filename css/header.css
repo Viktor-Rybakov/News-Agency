@@ -93,7 +93,7 @@
 /* --- header-middle-row-elements --- */
 
 .icon-burger--mobile {
-  position: relative;
+  /* position: relative; */
 
   display: none;
   flex-direction: column;
