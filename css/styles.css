@@ -18,12 +18,6 @@ body {
   color: #000000;
 }
 
-@media (max-width: 560px) {
-  body {
-    background-color: #ffffff;
-  }
-}
-
 body.modal-active {
   overflow: hidden;
 }

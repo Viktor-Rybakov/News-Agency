@@ -11,8 +11,11 @@ $(function(){
       if (response.success) {
         exhangeRateElem.removeClass('hidden');
 
+        $('.js-news-list__heading').css({
+          'margin-bottom': '15px'
+        });
+
         $('.js-news-list').css({
-          'padding-top': '15px',
           'margin-bottom': '23px'
         });
 
