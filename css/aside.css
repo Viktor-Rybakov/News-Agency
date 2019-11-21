@@ -5,17 +5,36 @@
   margin-bottom: 20px;
 }
 
+.banner:last-child {
+  margin-bottom: 0;
+}
+
 @media (max-width: 560px) {
   .banner {
     margin-bottom: 0;
+    margin-right: 20px;
+
+    flex-shrink: 0;
   }
 }
 
-.banner:last-child {
-  margin-bottom: 0;
+@media (max-width: 560px) {
+  .banner:last-child {
+    margin-right: 0;
+  }
 }
 
 .banner__image {
   display: block;
   width: 100%;
+}
+
+@media (max-width: 560px) {
+  .banner__image {
+    width: 250px;
+    height: 400px;
+
+    object-fit: cover;
+    object-position: top;
+  }
 }
