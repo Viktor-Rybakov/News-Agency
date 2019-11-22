@@ -335,11 +335,6 @@
 }
 
 .header-menu__list {
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-  flex-wrap: wrap;
-
   margin: 0;
   padding: 0;
 
@@ -347,21 +342,28 @@
 }
 
 .header-menu__item {
-  display: block;
-  margin-right: 1.125em;
-}
-
-.header-menu__item::after {
-  content: "/";
-}
-
-.header-menu__item:last-child::after {
-  content: "";
+  display: inline-block;
+  position: relative;
+  margin-right: 2.250em;
 }
 
 .header-menu__item-link {
+  display: inline-block;
   letter-spacing: -0.32px;
-  margin-right: 1.125em;
+  /* margin-right: 1.125em; */
+}
+.header-menu__item::after {
+  content: "/";
+  position: absolute;
+  display: block;
+  right: -1.4em;
+  top: 0;
+
+  color: #91919f;
+}
+
+.header-menu__item:last-child::after {
+  display: none;
 }
 
 .header-menu__item:last-child,
