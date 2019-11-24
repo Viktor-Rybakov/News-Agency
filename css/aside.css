@@ -9,7 +9,7 @@
   margin-bottom: 0;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 1000px) {
   .banner {
     margin-bottom: 0;
     margin-right: 20px;
@@ -18,7 +18,7 @@
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 1000px) {
   .banner:last-child {
     margin-right: 0;
   }
@@ -29,7 +29,7 @@
   width: 100%;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 1000px) {
   .banner__image {
     width: 250px;
     height: 400px;
