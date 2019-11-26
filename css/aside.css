@@ -24,12 +24,24 @@
   }
 }
 
-.banner__image {
+.banner__image-container {
   display: block;
+}
+
+.banner__image {
   width: 100%;
 }
 
 @media (max-width: 1000px) {
+  .banner__image {
+    height: 250px;
+
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+@media (max-width: 560px) {
   .banner__image {
     width: 250px;
     height: 400px;
