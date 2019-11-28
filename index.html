@@ -26,11 +26,11 @@
     </div>
 
     <div class="header-middle fix-container">
-      <div class="icon-burger--mobile">
-        <span class="icon-burger__bar"></span>
-        <span class="icon-burger__bar"></span>
-        <span class="icon-burger__bar"></span>
-      </div>
+      <button class="mobile-menu-button js-mobile-menu-button" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu">
+        <span class="mobile-menu-button__bar"></span>
+        <span class="mobile-menu-button__bar"></span>
+        <span class="mobile-menu-button__bar"></span>
+      </button>
 
       <picture class="header-logo_image">
         <source media="(max-width: 768px)" srcset="img/logo-mobile.png">
@@ -58,7 +58,7 @@
       <button class="search-form__button--mobile" type="button" aria-label="Поиск"></button>
     </div>
 
-    <nav class="header-bottom header-menu fix-container">
+    <nav id="menu" class="header-bottom header-menu fix-container">
       <ul class="header-menu__list">
         <li class="header-menu__item">
           <a class="header-menu__item-link" href="#">Главная</a>
@@ -537,6 +537,7 @@
   </footer>
 
   <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/mobile-menu.js"></script>
   <!-- <script src="js/script.js"></script> -->
 
 </body>

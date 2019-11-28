@@ -98,31 +98,35 @@
 
 /* --- header-middle-row-elements --- */
 
-.icon-burger--mobile {
-  /* position: relative; */
-
+.mobile-menu-button {
   display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 20px;
   height: 16px;
   margin-left: 0;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
-  .icon-burger--mobile {
+  .mobile-menu-button {
     display: flex;
   }
 }
 
 @media (max-width: 560px) {
-  .icon-burger--mobile {
+  .mobile-menu-button {
     margin-left: 25px;
   }
 }
 
-.icon-burger__bar {
-  display: block;
+.mobile-menu-button__bar {
+  width: 20px;
   height: 2px;
   margin: 0;
 
@@ -449,4 +453,22 @@
   color: #0072bc;
   
   border-bottom: 2px dotted #0072bc;
+}
+
+/* --- mobile-menu -- */
+
+.mobile-menu {
+  display: block;
+}
+
+.mobile-menu__list {
+
+}
+
+.mobile-menu__item {
+
+}
+
+.mobile-menu__item-link {
+
 }
