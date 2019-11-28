@@ -458,15 +458,37 @@
 /* --- mobile-menu -- */
 
 .mobile-menu {
+  position: relative;
   display: block;
+  overflow: visible;
+  
 }
 
 .mobile-menu__list {
+  position: absolute;
+  left: 20px;
+  z-index: 100;
+
+  width: 200px;
+  margin: 0;
+  padding: 0;
+
+  background-color: #ffffff;
+  list-style: none;
 
 }
 
 .mobile-menu__item {
+  display: block;
+  padding: 15px;
 
+  
+  border-bottom: 1px solid#91919f
+
+}
+
+.mobile-menu__item:first-child {
+  border-top: 1px solid #91919f;
 }
 
 .mobile-menu__item-link {
