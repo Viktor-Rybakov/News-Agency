@@ -1,24 +1,30 @@
 $(function(){
 
-  var mobileMenuButton = $('.js-mobile-menu-button');
-  var mobileMenu = $('#menu');
-  var headerMenuList = $('.header-menu__list');
-  var headerMenuItem = $('.header-menu__item');
-  var headerMenuItemLink = $('.header-menu__item-link');
+  let mobileMenuButton = $('.js-mobile-menu-button');
+  let mobileMenu = $('#menu');
 
   mobileMenuButton.on('click', function() {
-    mobileMenu.toggleClass('header-bottom header-menu fix-container mobile-menu');
-    headerMenuList.toggleClass('header-menu__list mobile-menu__list');
-    headerMenuItem.toggleClass('header-menu__item mobile-menu__item');
-    headerMenuItemLink.toggleClass('header-menu__item-link mobile-menu__item-link');
+    mobileMenu.toggleClass('header-menu--mobile');
 
     if ( mobileMenuButton.attr('aria-expanded') === 'false' ) {
       mobileMenuButton.attr('aria-label', 'Закрыть меню');
       mobileMenuButton.attr('aria-expanded', 'true');
+      mobileMenuButton.addClass('mobile-menu-button--open')
     } else {
       mobileMenuButton.attr('aria-label', 'Открыть меню');
       mobileMenuButton.attr('aria-expanded', 'false');
+      mobileMenuButton.removeClass('mobile-menu-button--open');
     }
   });
 
+  $(window).resize( function(){
+    let docWidth = $(window).width();
+
+    if (docWidth > 768) {
+      mobileMenu.removeClass('header-menu--mobile');
+      mobileMenuButton.attr('aria-label', 'Открыть меню');
+      mobileMenuButton.attr('aria-expanded', 'false');
+      mobileMenuButton.removeClass('mobile-menu-button--open');
+    }
+  });
 })

@@ -16,6 +16,13 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
+@media (max-width: 1040px) and (min-width: 560px) {
+  .footer-top {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
 @media (max-width: 560px) {
   .footer-top{
     margin-left: 25px;

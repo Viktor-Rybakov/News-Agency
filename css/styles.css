@@ -53,13 +53,6 @@ a {
 	margin: 0 auto;
 }
 
-@media (min-width: 561px) and (max-width: 1040px ) {
-  .fix-container {
-    margin: 0 20px;
-  }
-}
-
-
 .hidden {
   display: none;
 }
