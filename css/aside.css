@@ -34,8 +34,6 @@
 
 @media (max-width: 1000px) {
   .banner__image {
-    height: 250px;
-
     object-fit: cover;
     object-position: top;
   }
