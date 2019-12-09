@@ -27,7 +27,7 @@
 }
 
 .header-top {
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   padding: 1.25em 0;
 
   color: #ffffff;
@@ -44,7 +44,7 @@
 
 @media (max-width: 768px) {
   .header-top {
-    margin-bottom: 13px;
+    /* margin-bottom: 13px; */
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -56,6 +56,7 @@
   align-items: baseline;
   flex-wrap: wrap;
   margin-bottom: 35px;
+  padding-top: 40px;
 }
 
 @media (max-width: 1040px) {
@@ -69,12 +70,13 @@
   .header-middle {
     margin-left: 0;
     margin-right: 0;
-    padding-left: 15px;
-    padding-right: 25px;
     margin-bottom: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 13px;
     align-items: center;
 
-    background: linear-gradient(to bottom, #ffffff 59px, #f3f3f3 59px, #ffffff 79px);
+    background: linear-gradient(to bottom, #ffffff 72px, #f3f3f3 72px, #ffffff 92px);
   }
 
   .header-middle::after {
@@ -86,7 +88,7 @@
 
 @media (max-width: 560px) {
   .header-middle {
-    background: linear-gradient(to bottom, #ffffff 50px, #f3f3f3 50px, #ffffff 70px);
+    background: linear-gradient(to bottom, #ffffff 63px, #f3f3f3 63px, #ffffff 83px);
   }
 }
 
@@ -94,6 +96,13 @@
   .header-bottom {
     margin-left: 20px;
     margin-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-bottom {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -145,8 +154,8 @@
   justify-content: space-between;
   width: 40px;
   height: 36px;
-  margin-left: 0;
-  padding: 0;
+  margin-left: -10px;
+  padding: 10px;
 
   background-color: transparent;
   border: none;
@@ -157,7 +166,6 @@
 @media (max-width: 768px) {
   .mobile-menu-button {
     display: flex;
-    padding: 10px;
   }
 }
 
@@ -249,7 +257,6 @@
     align-items: baseline;
 
     margin-top: 33px;
-    margin-left: 5px;
 
     color: #91919f;
   }
@@ -424,6 +431,7 @@
 @media (max-width: 768px) {
   .header-menu__list {
     position: absolute;
+    top: -41px;
     z-index: 100;
 
     width: 100%;
@@ -431,6 +439,12 @@
 
     background: linear-gradient(to bottom, #f3f3f3, #ffffff 20px);
     background-color: #ffffff;
+  }
+}
+
+@media (max-width: 560px) {
+  .header-menu__list {
+    top: -66px;
   }
 }
 
