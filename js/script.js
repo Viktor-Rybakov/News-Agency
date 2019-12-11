@@ -11,7 +11,7 @@ $(function(){
       if (response.success) {
         exhangeRateElem.removeClass('hidden');
 
-        $('.js-news-list__heading').css({
+        $('.js-news-list-heading').css({
           'margin-bottom': '15px'
         });
 
@@ -27,7 +27,7 @@ $(function(){
           'margin-bottom': '0'
         });
 
-        $('.js-button').css({
+        $('.js-all-news-button').css({
           'margin-bottom': '0'
         });
 

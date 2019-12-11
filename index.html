@@ -4,7 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Новостное агентство</title>
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/header.css">
@@ -16,9 +18,9 @@
 <body>
   <header class="header">
     <div class="header-top">
-      <div class="fix-container header__flex-container">
+      <div class="header-top__flex-container fix-container">
         <h1 class="header-top__heading">Самые
-          <a class="header-top__heading-link" href="#">свежие новости</a> в реальном времени
+          <a class="header-top__link" href="#">свежие новости</a> в реальном времени
         </h1>
 
         <time class="header-top__datetime" datetime="2019-06-16T12:30:00">12:30 19.06.2019</time>
@@ -32,69 +34,68 @@
         <span class="mobile-menu-button__bar"></span>
       </button>
 
-      <picture class="header-logo_image">
-        <source media="(max-width: 768px)" srcset="img/logo-mobile.png">
+      <picture class="header-logo">
+        <source class="header-logo__image" media="(max-width: 768px)" srcset="img/logo-mobile.png">
 
-        <img src="img/logo.png" alt="Логотип новостного агенства">
+        <img class="header-logo__image" src="img/logo.png" alt="Логотип новостного агенства">
       </picture>
       
 
-      <a class="city-choise__link" href="#">
+      <a class="city-choise" href="#">
         <span class="city-choise__text">Москва</span>
       </a>
 
-      <time class="header-middle__datetime" datetime="2019-06-19T10:48:00">
-        <span class="header-middle__date">19 июня, вторник</span>
-        <span class="header-middle__date--mobile">19 июня, вт</span>
-        <span class="header-middle__time">10:48</span>
+      <time class="datetime" datetime="2019-06-19T10:48:00">
+        <span class="datetime__date">19 июня, вторник</span>
+        <span class="datetime__date datetime__date_mobile">19 июня, вт</span>
+        <span class="datetime__time">10:48</span>
       </time>
 
-      <span class="header-middle__weather">+22 &#8451;</span>
+      <span class="weather">+22 &#8451;</span>
 
       <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-        <input class="search-form__text" type="search" placeholder="Поиск по сайту" name="search">
-        <button class="search-form__button" type="submit" aria-label="Поиск"></button>
+        <input class="search-form__input" type="search" placeholder="Поиск по сайту" name="search">
+        <button class="search-form__button" type="button" aria-label="Поиск"></button>
+        <button class="search-form__button search-form__button_mobile" type="button" aria-label="Открыть поиск"></button>
       </form>
-
-      <button class="search-form__button--mobile" type="button" aria-label="Поиск"></button>
     </div>
 
     <nav id="menu" class="header-bottom header-menu fix-container">
       <ul class="header-menu__list">
         <li class="header-menu__item">
-          <a class="header-menu__item-link" href="#">Главная</a>
+          <a class="header-menu__link" href="#">Главная</a>
         </li>
 
         <li class="header-menu__item">
-          <a class="header-menu__item-link" href="#">Политика</a>
+          <a class="header-menu__link" href="#">Политика</a>
         </li>
 
         <li class="header-menu__item">
-          <a class="header-menu__item-link" href="#">Общество</a>
+          <a class="header-menu__link" href="#">Общество</a>
         </li>
 
         <li class="header-menu__item">
-          <a class="header-menu__item-link" href="#">Экономика</a>
+          <a class="header-menu__link" href="#">Экономика</a>
         </li>
 
         <li class="header-menu__item">
-          <a class="header-menu__item-link" href="#">В мире</a>
+          <a class="header-menu__link" href="#">В мире</a>
         </li>
 
         <li class="header-menu__item">
-          <a class="header-menu__item-link" href="#">Происшествия</a>
+          <a class="header-menu__link" href="#">Происшествия</a>
         </li>
 
         <li class="header-menu__item">
-          <a class="header-menu__item-link" href="#">Спорт</a>
+          <a class="header-menu__link" href="#">Спорт</a>
         </li>
 
         <li class="header-menu__item">
-          <a class="header-menu__item-link" href="#">Наука</a>
+          <a class="header-menu__link" href="#">Наука</a>
         </li>
 
         <li class="header-menu__item">
-          <a class="header-menu__item-link" href="#">Туризм</a>
+          <a class="header-menu__link" href="#">Туризм</a>
         </li>
       </ul>
     </nav>
@@ -104,14 +105,14 @@
     <div class="fix-container">
       <div class="main-top">
         <section class="news-today">
-          <h2 class="news-list__heading js-news-list__heading">
-            <a class="news-list__heading-link" href="#">Новости дня</a>
+          <h2 class="news-list-heading js-news-list-heading">
+            <a class="news-list-heading__link" href="#">Новости дня</a>
           </h2>
           <ul class="news-list js-news-list">
             <li class="news-list__item js-news-list__item">
               <article class="news-item">
                 <h3 class="news-item__heading">
-                  <a class="news-item__heading-link" href="#">Кот Ахилл предсказал победу российской сборной над Египтом
+                  <a class="news-item__link" href="#">Кот Ахилл предсказал победу российской сборной над Египтом
                     на ЧМ-2018</a>
                 </h3>
 
@@ -128,7 +129,7 @@
             <li class="news-list__item js-news-list__item">
               <article class="news-item">
                 <h3 class="news-item__heading">
-                  <a class="news-item__heading-link" href="#">«Нафтогаз»: суд разрешил заморозить активы «Газпрома» в
+                  <a class="news-item__link" href="#">«Нафтогаз»: суд разрешил заморозить активы «Газпрома» в
                     Великобритании</a>
                 </h3>
 
@@ -145,7 +146,7 @@
             <li class="news-list__item js-news-list__item">
               <article class="news-item">
                 <h3 class="news-item__heading">
-                  <a class="news-item__heading-link" href="#">Минтранс предписал оборудовать общественный транспорт
+                  <a class="news-item__link" href="#">Минтранс предписал оборудовать общественный транспорт
                     кондиционерами</a>
                 </h3>
 
@@ -162,7 +163,7 @@
             <li class="news-list__item js-news-list__item">
               <article class="news-item ">
                 <h3 class="news-item__heading">
-                  <a class="news-item__heading-link" href="#">Летние кафе Москвы временно закроются из-за непогоды</a>
+                  <a class="news-item__link" href="#">Летние кафе Москвы временно закроются из-за непогоды</a>
                 </h3>
 
                 <div class="news-item__props">
@@ -178,7 +179,7 @@
             <li class="news-list__item js-news-list__item">
               <article class="news-item">
                 <h3 class="news-item__heading">
-                  <a class="news-item__heading-link" href="#">Комплексное благоустройство Щелковского шоссе завершится в
+                  <a class="news-item__link" href="#">Комплексное благоустройство Щелковского шоссе завершится в
                     июне</a>
                 </h3>
 
@@ -195,7 +196,7 @@
             <li class="news-list__item js-news-list__item">
               <article class="news-item">
                 <h3 class="news-item__heading">
-                  <a class="news-item__heading-link" href="#">В Москве назвали самое популярное мороженое у болельщиков
+                  <a class="news-item__link" href="#">В Москве назвали самое популярное мороженое у болельщиков
                     ЧМ-2018</a>
                 </h3>
 
@@ -210,7 +211,7 @@
             </li>
           </ul>
 
-          <a class="button js-button" href="#">Все новости</a>
+          <a class="all-news-button js-all-news-button" href="#">Все новости</a>
 
           <section class="exhange-rate js-exhange-rate hidden">
             <h2 class="exhange-rate__heading">Курс валют</h2>
@@ -237,7 +238,7 @@
               alt="Изображение крепости с видом на Черное море">
             <a class="news-with-picture__label" href="#">Политика</a>
             <h3 class="news-with-picture__heading">
-              <a class="news-with-picture__heading-link" href="#">В Крыму отреагировали на&nbsp;слова Кравчука
+              <a class="news-with-picture__link" href="#">В Крыму отреагировали на&nbsp;слова Кравчука
                 о&nbsp;возврате
                 полуострова</a>
             </h3>
@@ -254,7 +255,7 @@
               <article class="news-item">
                 <img class="news-item__image" src="img/news_2.png" alt="Фотография Навального на акции протеста">
                 <h3 class="news-item__heading">
-                  <a class="news-item__heading-link" href="#">Алексей Навальный объявил акцию против пенсионной
+                  <a class="news-item__link" href="#">Алексей Навальный объявил акцию против пенсионной
                     реформы 1 июля</a>
                 </h3>
 
@@ -272,7 +273,7 @@
               <article class="news-item">
                 <img class="news-item__image" src="img/news_3.png" alt="Фотография загранпаспортов на столе">
                 <h3 class=" news-item__heading">
-                  <a class="news-item__heading-link" href="#">Дума увеличила пошлины за выдачу загранпаспортов и
+                  <a class="news-item__link" href="#">Дума увеличила пошлины за выдачу загранпаспортов и
                     водительских прав</a>
                 </h3>
 
@@ -290,7 +291,7 @@
               <article class="news-item">
                 <img class="news-item__image" src="img/news_4.png" alt="Фотография девушки с наушниками">
                 <h3 class="news-item__heading">
-                  <a class="news-item__heading-link" href="#">В России заработал стриминговый сервис YouTube</a>
+                  <a class="news-item__link" href="#">В России заработал стриминговый сервис YouTube</a>
                 </h3>
 
                 <div class="news-item__props">
@@ -306,7 +307,7 @@
               <article class="news-item">
                 <img class="news-item__image" src="img/news_5.png" alt="Фотография футболиста">
                 <h3 class="news-item__heading">
-                  <a class="news-item__heading-link" href="#">Кейн признан лучшим игроком матча ЧМ-2018 Тунис —
+                  <a class="news-item__link" href="#">Кейн признан лучшим игроком матча ЧМ-2018 Тунис —
                     Англия</a>
                 </h3>
 
@@ -342,16 +343,16 @@
       </div>
 
       <section class="news-most-read">
-        <div class="news-list__container">
-          <h2 class="news-list__heading">
-            <a class="news-list__heading-link" href="#">Самые читаемые новости</a>
+        <div class="news-list-container">
+          <h2 class="news-list-heading">
+            <a class="news-list-heading__link" href="#">Самые читаемые новости</a>
           </h2>
 
           <ul class="news-list">
             <li class="news-list__item">
               <article class="news-item">
                 <h3 class="news-item__heading">
-                  <a class="news-item__heading-link" href="#">В Турции пообещали найти альтернативу из-за отказа США
+                  <a class="news-item__link" href="#">В Турции пообещали найти альтернативу из-за отказа США
                     поставить F-35</a>
                 </h3>
 
@@ -368,7 +369,7 @@
             <li class="news-list__item">
               <article class="news-item">
                 <h3 class="news-item__heading">
-                  <a class="news-item__heading-link" href="#">Назван минимальный доход для причисления к среднему
+                  <a class="news-item__link" href="#">Назван минимальный доход для причисления к среднему
                     классу‍</a>
                 </h3>
 
@@ -385,7 +386,7 @@
             <li class="news-list__item">
               <article class="news-item">
                 <h3 class="news-item__heading">
-                  <a class="news-item__heading-link" href="#">Назван минимальный доход для причисления к среднему
+                  <a class="news-item__link" href="#">Назван минимальный доход для причисления к среднему
                     классу‍</a>
                 </h3>
 
@@ -407,7 +408,7 @@
           <a class="news-with-picture__label" href="#">Политика</a>
 
           <h3 class="news-with-picture__heading">
-            <a class="news-with-picture__heading-link" href="#">Пекин обвинил Вашингтон в&nbsp;развязывании торговой
+            <a class="news-with-picture__link" href="#">Пекин обвинил Вашингтон в&nbsp;развязывании торговой
               войны</a>
           </h3>
 
@@ -427,43 +428,43 @@
 
   <footer class="footer">
     <div class="footer-top">
-      <div class="fix-container footer__flex-container">
-        <nav class="footer-left">
+      <div class="footer-top__flex-container fix-container">
+        <nav class="footer-left footer-menu">
           <ul class="footer-menu__list">
             <li class="footer-menu__item">
-              <a class="footer-menu__item-link" href="#">Главная</a>
+              <a class="footer-menu__link" href="#">Главная</a>
             </li>
 
             <li class="footer-menu__item">
-              <a class="footer-menu__item-link" href="#">Политика</a>
+              <a class="footer-menu__link" href="#">Политика</a>
             </li>
 
             <li class="footer-menu__item">
-              <a class="footer-menu__item-link" href="#">Общество</a>
+              <a class="footer-menu__link" href="#">Общество</a>
             </li>
 
             <li class="footer-menu__item">
-              <a class="footer-menu__item-link" href="#">Экономика</a>
+              <a class="footer-menu__link" href="#">Экономика</a>
             </li>
 
             <li class="footer-menu__item">
-              <a class="footer-menu__item-link" href="#">В мире</a>
+              <a class="footer-menu__link" href="#">В мире</a>
             </li>
 
             <li class="footer-menu__item">
-              <a class="footer-menu__item-link" href="#">Путешествия</a>
+              <a class="footer-menu__link" href="#">Путешествия</a>
             </li>
 
             <li class="footer-menu__item">
-              <a class="footer-menu__item-link" href="#">Спорт</a>
+              <a class="footer-menu__link" href="#">Спорт</a>
             </li>
 
             <li class="footer-menu__item">
-              <a class="footer-menu__item-link" href="#">Наука</a>
+              <a class="footer-menu__link" href="#">Наука</a>
             </li>
 
             <li class="footer-menu__item">
-              <a class="footer-menu__item-link" href="#">Туризм</a>
+              <a class="footer-menu__link" href="#">Туризм</a>
             </li>
           </ul>
         </nav>
@@ -474,54 +475,54 @@
           <nav class="footer-about">
             <ul class="footer-about__list">
               <li class="footer-about__item">
-                <a class="footer-about__item-link" href="#">Об агенстве</a>
+                <a class="footer-about__link" href="#">Об агенстве</a>
               </li>
 
               <li class="footer-about__item">
-                <a class="footer-about__item-link" href="#">Контакты</a>
+                <a class="footer-about__link" href="#">Контакты</a>
               </li>
 
               <li class="footer-about__item">
-                <a class="footer-about__item-link" href="#">Опубликовать новость</a>
+                <a class="footer-about__link" href="#">Опубликовать новость</a>
               </li>
             </ul>
           </nav>
         </div>
 
-        <div class="footer-right">
-          <ul class="social-button__list">
-            <li class="social-button__item">
-              <a class="social-button vk" href="https://vk.com/" target="_blank" aria-label="Вконтакте"></a>
+        <div class="footer-right socials contacts">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link vk" href="https://vk.com/" target="_blank" aria-label="Вконтакте"></a>
             </li>
 
-            <li class="social-button__item">
-              <a class="social-button fb" href="https://www.facebook.com/" target="_blank" aria-label="Фейсбук"></a>
+            <li class="socials__item">
+              <a class="socials__link fb" href="https://www.facebook.com/" target="_blank" aria-label="Фейсбук"></a>
             </li>
 
-            <li class="social-button__item">
-              <a class="social-button twitter" href="https://twitter.com/" target="_blank" aria-label="Твиттер"></a>
+            <li class="socials__item">
+              <a class="socials__link twitter" href="https://twitter.com/" target="_blank" aria-label="Твиттер"></a>
             </li>
 
-            <li class="social-button__item">
-              <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"
+            <li class="socials__item">
+              <a class="socials__link instagram" href="https://www.instagram.com/" target="_blank"
                 aria-label="Инстаграмм"></a>
             </li>
           </ul>
 
           <ul class="contacts__list">
             <li class="contacts__item">
-              <a class="contacts__item-link footer__phone" href="tel:+74999955555">+7 (499) 995-55-55</a>
+              <a class="contacts__link footer__phone" href="tel:+74999955555">+7 (499) 995-55-55</a>
             </li>
 
             <li class="contacts__item">
-              <a class="contacts__item-link footer__email" href="mailto:info@agency.ru">info@agency.ru</a>
+              <a class="contacts__link footer__email" href="mailto:info@agency.ru">info@agency.ru</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
 
-    <p class="footer__copyright fix-container">&copy; Новостное агентство, 2017-2018<br> все права защищены</p>
+    <p class="footer-copyright fix-container">&copy; Новостное агентство, 2017-2018<br> все права защищены</p>
   </footer>
 
   <script src="js/jquery-3.4.1.min.js"></script>

@@ -16,9 +16,7 @@
 
     flex-shrink: 0;
   }
-}
 
-@media (max-width: 1000px) {
   .banner:last-child {
     margin-right: 0;
   }
