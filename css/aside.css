@@ -9,6 +9,14 @@
   margin-bottom: 0;
 }
 
+.banner__image-container {
+  display: block;
+}
+
+.banner__image {
+  width: 100%;
+}
+
 @media (max-width: 1000px) {
   .banner {
     margin-bottom: 0;
@@ -20,17 +28,7 @@
   .banner:last-child {
     margin-right: 0;
   }
-}
 
-.banner__image-container {
-  display: block;
-}
-
-.banner__image {
-  width: 100%;
-}
-
-@media (max-width: 1000px) {
   .banner__image {
     object-fit: cover;
     object-position: top;
