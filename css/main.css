@@ -267,6 +267,7 @@
   max-height: 140px;
   object-fit: cover;
   margin-bottom: 8px;
+  font-size: 0;
 }
 
 .news-item__heading {
