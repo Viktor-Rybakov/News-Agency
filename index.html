@@ -264,22 +264,33 @@
           <ul class="news-list">
             <li class="news-list__item">
               <article class="news-item">
-                <picture class="news-item__image">
+                <picture class="news-item__image-container">
                   <source media="(min-width: 1024px)" type="image/webp"
-                    srcset="https://via.placeholder.com/221x142.webp/0000FF/808080?text=logo-laptop-webp-1x 1x, https://via.placeholder.com/442x284.webp/FFFF00/000000?text=logo-laptop-webp-2x 2x, https://via.placeholder.com/663x423.webp/FF0000/FFFFFF?text=logo-laptop-webp-3x 3x">
+                    srcset="https://via.placeholder.com/221x142.webp/0000FF/808080?text=logo-laptop-webp-1x 1x, 
+                    https://via.placeholder.com/442x284.webp/FFFF00/000000?text=logo-laptop-webp-2x 2x, 
+                    https://via.placeholder.com/663x423.webp/FF0000/FFFFFF?text=logo-laptop-webp-3x 3x">
                   <source media="(min-width: 768px)" type="image/webp"
-                    srcset="https://via.placeholder.com/221x142.webp/0000FF/808080?text=logo-tablet-webp-1x 1x, https://via.placeholder.com/442x284.webp/FFFF00/000000?text=logo-tablet-webp-2x 2x, https://via.placeholder.com/663x423.webp/FF0000/FFFFFF?text=logo-tablet-webp-3x 3x">
+                    srcset="https://via.placeholder.com/221x142.webp/0000FF/808080?text=logo-tablet-webp-1x 1x, 
+                    https://via.placeholder.com/442x284.webp/FFFF00/000000?text=logo-tablet-webp-2x 2x, 
+                    https://via.placeholder.com/663x423.webp/FF0000/FFFFFF?text=logo-tablet-webp-3x 3x">
                   <source type="image/webp"
-                    srcset="https://via.placeholder.com/221x142.webp/0000FF/808080?text=logo-mobile-webp-1x 1x, https://via.placeholder.com/442x284.webp/FFFF00/000000?text=logo-mobile-webp-2x 2x, https://via.placeholder.com/663x423.webp/FF0000/FFFFFF?text=logo-mobile-webp-3x 3x">
+                    srcset="https://via.placeholder.com/221x142.webp/0000FF/808080?text=logo-mobile-webp-1x 1x, 
+                    https://via.placeholder.com/442x284.webp/FFFF00/000000?text=logo-mobile-webp-2x 2x, 
+                    https://via.placeholder.com/663x423.webp/FF0000/FFFFFF?text=logo-mobile-webp-3x 3x">
                   <source media="(min-width: 1024px)"
-                    srcset="https://via.placeholder.com/221x142.png/0000FF/808080?text=logo-laptop-webp-1x 1x, https://via.placeholder.com/442x284.png/FFFF00/000000?text=logo-laptop-webp-2x 2x, https://via.placeholder.com/663x423.png/FF0000/FFFFFF?text=logo-laptop-webp-3x 3x">
+                    srcset="https://via.placeholder.com/221x142.png/0000FF/808080?text=logo-laptop-webp-1x 1x, 
+                    https://via.placeholder.com/442x284.png/FFFF00/000000?text=logo-laptop-webp-2x 2x, 
+                    https://via.placeholder.com/663x423.png/FF0000/FFFFFF?text=logo-laptop-webp-3x 3x">
                   <source media="(min-width: 768px)"
-                    srcset="https://via.placeholder.com/221x142.png/0000FF/808080?text=logo-tablet-webp-1x 1x, https://via.placeholder.com/442x284.png/FFFF00/000000?text=logo-tablet-webp-2x 2x, https://via.placeholder.com/663x423.png/FF0000/FFFFFF?text=logo-tablet-webp-3x 3x">
-                  <img src="img/news_2.png"
-                    srcset="https://via.placeholder.com/442x284.png/FFFF00/000000?text=logo-mobile-webp-2x 2x, https://via.placeholder.com/663x423.png/FF0000/FFFFFF?text=logo-mobile-webp-3x 3x"
+                    srcset="https://via.placeholder.com/221x142.png/0000FF/808080?text=logo-tablet-webp-1x 1x, 
+                    https://via.placeholder.com/442x284.png/FFFF00/000000?text=logo-tablet-webp-2x 2x, 
+                    https://via.placeholder.com/663x423.png/FF0000/FFFFFF?text=logo-tablet-webp-3x 3x">
+                  <img class="news-item__image" src="img/news_2.png"
+                    srcset="https://via.placeholder.com/442x284.png/FFFF00/000000?text=logo-mobile-webp-2x 2x, 
+                    https://via.placeholder.com/663x423.png/FF0000/FFFFFF?text=logo-mobile-webp-3x 3x"
                     alt="Фотография Навального на акции протеста">
                 </picture>
-                <!-- <img class="news-item__image" src="img/news_2.png" alt="Фотография Навального на акции протеста"> -->
+                <!-- <img class="news-item__image-container" src="img/news_2.png" alt="Фотография Навального на акции протеста"> -->
                 <h3 class="news-item__heading">
                   <a class="news-item__link" href="#">Алексей Навальный объявил акцию против пенсионной
                     реформы 1 июля</a>
@@ -297,7 +308,7 @@
 
             <li class="news-list__item">
               <article class="news-item">
-                <img class="news-item__image" src="img/news_3.png" alt="Фотография загранпаспортов на столе">
+                <img class="news-item__image-container news-item__image" src="img/news_3.png" alt="Фотография загранпаспортов на столе">
                 <h3 class=" news-item__heading">
                   <a class="news-item__link" href="#">Дума увеличила пошлины за выдачу загранпаспортов и
                     водительских прав</a>
@@ -315,7 +326,7 @@
 
             <li class="news-list__item">
               <article class="news-item">
-                <img class="news-item__image" src="img/news_4.png" alt="Фотография девушки с наушниками">
+                <img class="news-item__image-container news-item__image" src="img/news_4.png" alt="Фотография девушки с наушниками">
                 <h3 class="news-item__heading">
                   <a class="news-item__link" href="#">В России заработал стриминговый сервис YouTube</a>
                 </h3>
@@ -331,7 +342,7 @@
 
             <li class="news-list__item">
               <article class="news-item">
-                <img class="news-item__image" src="img/news_5.png" alt="Фотография футболиста">
+                <img class="news-item__image-container news-item__image" src="img/news_5.png" alt="Фотография футболиста">
                 <h3 class="news-item__heading">
                   <a class="news-item__link" href="#">Кейн признан лучшим игроком матча ЧМ-2018 Тунис —
                     Англия</a>
