@@ -27,4 +27,13 @@ $(function(){
       mobileMenuButton.removeClass('mobile-menu-button_open');
     }
   });
-})
+
+  $(document).click(function (e) {
+    if ( !mobileMenuButton.is(e.target) && !mobileMenu.is(e.target) && mobileMenu.has(e.target).length === 0) {
+      mobileMenu.removeClass('header-menu_mobile');
+      mobileMenuButton.attr('aria-label', 'Открыть меню');
+      mobileMenuButton.attr('aria-expanded', 'false');
+      mobileMenuButton.removeClass('mobile-menu-button_open');
+    }
+  });
+});
