@@ -65,9 +65,25 @@
               alt="Логотип новостного агенства">
       </picture>
 
-      <a class="city-choise" href="#">
-        <span class="city-choise__text">Москва</span>
+      <a class="current-city js-current-city" href="#">
+        <span class="current-city__text js-current-city__text">Москва</span>
       </a>
+
+      <div id="city-choise" class="city-choise js-city-choise">
+        <ul class="city-choise__list">
+          <li class="city-choise__list-item" data-city="Москва">Москва</li>
+          <li class="city-choise__list-item" data-city="Санкт-Петербург">Санкт-Петербург</li>
+          <li class="city-choise__list-item" data-city="Самара">Самара</li>
+          <li class="city-choise__list-item" data-city="Казань">Казань</li>
+          <li class="city-choise__list-item" data-city="Нижний Новгород">Нижний Новгород</li>
+          <li class="city-choise__list-item" data-city="Ростов-на-Дону">Ростов-на-Дону</li>
+        </ul>
+
+        <button class="close-button js-close-button" type="button" aria-label="Закрыть окно выбора городов" aria-expanded="false" aria-controls="city-choise">
+          <span class="close-button__bar"></span>
+          <span class="close-button__bar"></span>
+        </button>
+      </div>
 
       <time class="datetime" datetime="2019-06-19T10:48:00">
         <span class="datetime__date">19 июня, вторник</span>
@@ -583,7 +599,8 @@
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/mobile-menu.js"></script>
-  <!-- <script src="js/script.js"></script> -->
+  <script src="js/city-choise.js"></script>
+  <!-- <script src="js/exhange-rate.js"></script> -->
 
 </body>
 

@@ -3,7 +3,7 @@ $(function(){
   let mobileMenuButton = $('.js-mobile-menu-button');
   let mobileMenu = $('#menu');
 
-  mobileMenuButton.on('click', function() {
+  mobileMenuButton.children().addBack().on('click', function() {
     mobileMenu.toggleClass('header-menu_mobile');
 
     if ( mobileMenuButton.attr('aria-expanded') === 'false' ) {
@@ -29,7 +29,7 @@ $(function(){
   });
 
   $(document).click(function (e) {
-    if ( !mobileMenuButton.is(e.target) && !mobileMenu.is(e.target) && mobileMenu.has(e.target).length === 0) {
+    if ( !mobileMenuButton.children().addBack().is(e.target) && !mobileMenu.is(e.target) && mobileMenu.has(e.target).length === 0) {
       mobileMenu.removeClass('header-menu_mobile');
       mobileMenuButton.attr('aria-label', 'Открыть меню');
       mobileMenuButton.attr('aria-expanded', 'false');
