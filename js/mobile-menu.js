@@ -2,12 +2,13 @@ $(function(){
 
   let mobileMenuButton = $('.js-mobile-menu-button');
   let mobileMenu = $('.js-header-menu');
+  let headerFix = $('.js-header-middle');
 
 // Открываем меню при клике на кнопку
 
   mobileMenuButton.children().addBack().on('click', function() {
     mobileMenu.toggleClass('modal');
-    let menuPosition = $('.js-header-middle').position().top + $('.js-header-middle').innerHeight();
+    let menuPosition = headerFix.position().top + headerFix.innerHeight() - $(window).scrollTop();
 
     if ( mobileMenuButton.attr('aria-expanded') === 'false' ) {
       mobileMenuButton.attr('aria-label', 'Закрыть меню');
@@ -24,7 +25,7 @@ $(function(){
 
 // Закрываем меню, если ширина окна стала больше, чем 768 пикселей
 
-  $(window).resize( function(){
+  $(window).resize(function(){
     let docWidth = $(window).width();
 
     if (docWidth > 768) {
@@ -47,4 +48,15 @@ $(function(){
       mobileMenu.removeAttr('style');
     }
   });
+
+  $(window).scroll(function(){
+    if ( !headerFix.hasClass('fixed') ) {
+      mobileMenuButton.attr('aria-label', 'Открыть меню');
+      mobileMenuButton.attr('aria-expanded', 'false');
+      mobileMenuButton.removeClass('mobile-menu-button_open');
+      mobileMenu.removeClass('modal');
+      mobileMenu.removeAttr('style');
+    }
+  });
+
 });
