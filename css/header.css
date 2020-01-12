@@ -203,7 +203,7 @@
 
 
 
-/*--- ccurrent-city ---*/
+/*--- current-city ---*/
 
 .current-city {
   display: block;
@@ -309,6 +309,7 @@
   margin: 0;
 
   background: #000000;
+  transition: 0.3s;
 }
 
 .close-button__bar:nth-child(1) {
@@ -319,6 +320,13 @@
   transform: translateY(-9px) rotate(-45deg);
 }
 
+.close-button:hover .close-button__bar:nth-child(1) {
+  transform: translateY(9px) rotate(135deg);
+}
+
+.close-button:hover .close-button__bar:nth-child(2) {
+  transform: translateY(-9px) rotate(45deg);
+}
 
 /*--- datetime ---*/
 
@@ -485,18 +493,6 @@
 
 /* --- header-menu --- */
 
-@media (max-width: 768px) {
-  .header-menu {
-    position: relative;
-    display: none;
-    overflow: visible;
-  }
-}
-
-.header-menu_mobile {
-  display: block;
-}
-
 .header-menu__list {
   margin: 0;
   padding: 0;
@@ -529,7 +525,6 @@
 }
 
 .header-menu__link {
-  display: inline-block;
   letter-spacing: -0.32px;
 }
 
@@ -560,12 +555,8 @@
 }
 
 @media (max-width: 768px) {
-  .header-menu__list {
-    position: absolute;
-    top: -41px;
-    z-index: 100;
-
-    width: 100%;
+  .header-menu {
+    display: none;
     padding: 0 25px;
 
     background: linear-gradient(to bottom, #f3f3f3, #ffffff 20px);
@@ -598,11 +589,5 @@
     border-bottom: none;
     border-left: 4px solid #0072bc;
     padding-left: 11px;
-  }
-}
-
-@media (max-width: 560px) {
-  .header-menu__list {
-    top: -66px;
   }
 }
