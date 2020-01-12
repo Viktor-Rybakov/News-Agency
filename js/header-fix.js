@@ -11,16 +11,6 @@ $(function(){
 
 // Закрепление панели меню наверху при скролле
 
-  // $(window).scroll(function() {
-  //   if ( ($(window).scrollTop() > menuToTop) && (docWidth <= 768) ) {
-  //     fixedMenu.addClass('fixed');
-  //     main.css('margin-top', menuHeight);
-  //   } else {
-  //     fixedMenu.removeClass('fixed');
-  //     main.removeAttr('style');
-  //   }
-  // });
-
   $(window).scroll(function() {
     if ( ($(window).scrollTop() > menuToBottom) && (docWidth <= 768) ) {
       fixedMenu.addClass('fixed');
