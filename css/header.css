@@ -83,6 +83,25 @@
   }
 }
 
+.header-middle_mobile-search {
+  padding-top: 8px;
+}
+
+.header-middle_mobile-fix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 62px;
+  z-index: 1000;
+
+  padding-bottom: 0;
+  padding-top: 0;
+  align-content: center;
+
+  background: none;
+  background-color: #ffffff;
+}
+
 .header-bottom {
   padding-bottom: 30px;
 }
@@ -192,6 +211,7 @@
 
 .header-logo {
   align-self: center;
+  font-size: 0;
 }
 
 @media (min-width:561px) and (max-width: 768px) {
@@ -392,6 +412,10 @@
   .datetime__date_mobile{
     display: block;
   }
+
+  .header-middle_mobile-search .datetime {
+    margin-top: 54px;
+  }
 }
 
 
@@ -422,6 +446,10 @@
 @media (max-width: 560px) {
   .weather {
     margin-top: 59px;
+  }
+
+  .header-middle_mobile-search .weather {
+    margin-top: 54px;
   }
 }
 

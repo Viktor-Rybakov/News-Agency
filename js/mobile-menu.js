@@ -8,7 +8,14 @@ $(function(){
 
   mobileMenuButton.children().addBack().on('click', function() {
     mobileMenu.toggleClass('modal');
-    let menuPosition = headerFix.position().top + headerFix.innerHeight() - $(window).scrollTop();
+    let menuPosition;
+
+    if (headerFix.hasClass('header-middle_mobile-fix')) {
+      menuPosition = headerFix.position().top + headerFix.innerHeight();
+    }
+    else {
+      menuPosition = headerFix.position().top + headerFix.innerHeight() - $(window).scrollTop();
+    }
 
     if ( mobileMenuButton.attr('aria-expanded') === 'false' ) {
       mobileMenuButton.attr('aria-label', 'Закрыть меню');
@@ -50,7 +57,7 @@ $(function(){
   });
 
   $(window).scroll(function(){
-    if ( !headerFix.hasClass('fixed') ) {
+    if ( !headerFix.hasClass('header-middle_mobile-fix') ) {
       mobileMenuButton.attr('aria-label', 'Открыть меню');
       mobileMenuButton.attr('aria-expanded', 'false');
       mobileMenuButton.removeClass('mobile-menu-button_open');

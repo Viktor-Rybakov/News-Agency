@@ -13,5 +13,9 @@ $(function(){
       headerLogo.hide();
       searchFormButtonMobile.hide();
     }
+
+    if ( !headerFix.hasClass('header-middle_mobile-fix') ) {
+      headerFix.addClass('header-middle_mobile-search')
+    }
   });
 });

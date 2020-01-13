@@ -14,12 +14,7 @@ $(function(){
 
   $(window).scroll(function() {
     if ( ($(window).scrollTop() > menuToBottom) && (docWidth <= 768) ) {
-      headerFix.addClass('fixed');
-      headerFix.css({
-        "padding-bottom": "13px",
-        "background": "none",
-        "background-color": "#ffffff",
-      });
+      headerFix.addClass('header-middle_mobile-fix');
       main.css('margin-top', menuHeight);
       datetime.hide();
       weather.hide();
@@ -28,7 +23,7 @@ $(function(){
         currentCity.hide();
       }
     } else {
-      headerFix.removeClass('fixed');
+      headerFix.removeClass('header-middle_mobile-fix');
       headerFix.removeAttr('style');
       main.removeAttr('style');
       datetime.show();
