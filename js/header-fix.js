@@ -1,4 +1,5 @@
 $(function(){
+  
   let headerFix = $('.js-header-middle');
   let datetime = $('.js-datetime');
   let weather = $('.js-weather');
