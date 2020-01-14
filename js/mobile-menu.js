@@ -7,7 +7,7 @@ $(function(){
 // Открываем меню при клике на кнопку
 
   mobileMenuButton.children().addBack().on('click', function() {
-    mobileMenu.toggleClass('modal');
+    mobileMenu.toggleClass('header-menu_open');
     let menuPosition;
 
     if (headerFix.hasClass('header-middle_mobile-fix')) {
@@ -39,7 +39,7 @@ $(function(){
       mobileMenuButton.attr('aria-label', 'Открыть меню');
       mobileMenuButton.attr('aria-expanded', 'false');
       mobileMenuButton.removeClass('mobile-menu-button_open');
-      mobileMenu.removeClass('modal');
+      mobileMenu.removeClass('header-menu_open');
       mobileMenu.removeAttr('style');
     }
   });
@@ -51,17 +51,19 @@ $(function(){
       mobileMenuButton.attr('aria-label', 'Открыть меню');
       mobileMenuButton.attr('aria-expanded', 'false');
       mobileMenuButton.removeClass('mobile-menu-button_open');
-      mobileMenu.removeClass('modal');
+      mobileMenu.removeClass('header-menu_open');
       mobileMenu.removeAttr('style');
     }
   });
+
+// Закрываем меню при скролле, если хедер не закреплен (вверху страницы)
 
   $(window).scroll(function(){
     if ( !headerFix.hasClass('header-middle_mobile-fix') ) {
       mobileMenuButton.attr('aria-label', 'Открыть меню');
       mobileMenuButton.attr('aria-expanded', 'false');
       mobileMenuButton.removeClass('mobile-menu-button_open');
-      mobileMenu.removeClass('modal');
+      mobileMenu.removeClass('header-menu_open');
       mobileMenu.removeAttr('style');
     }
   });

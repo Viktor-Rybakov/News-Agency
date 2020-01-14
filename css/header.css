@@ -262,13 +262,19 @@
 /*--- city-choise ---*/
 
 .city-choise {
-  display: none;
-
   margin: 0;
   padding: 40px;
 
   background-color: #ffffff;
   box-shadow: 0 5px 5px 0 #e5e5e5;
+}
+
+.city-choise_open {
+  display: block;
+}
+
+.city-choise_close {
+  display: none;
 }
 
 .city-choise__list {
@@ -618,4 +624,12 @@
     border-left: 4px solid #0072bc;
     padding-left: 11px;
   }
+}
+
+.header-menu_open {
+  display: block;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 5000;
 }
