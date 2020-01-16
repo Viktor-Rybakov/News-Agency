@@ -6,7 +6,7 @@ $(function(){
 
 // Открываем меню при клике на кнопку
 
-  mobileMenuButton.children().addBack().on('click', function() {
+  mobileMenuButton.on('click', function() {
     mobileMenu.toggleClass('header-menu_open');
     let menuPosition;
 
